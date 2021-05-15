@@ -1,0 +1,881 @@
+WEAPEscenario,Name,Prefix,Categoria,Value
+Reference,D_Almona,JMP Agua,Seguro,37.5
+Reference,D_Almona,JMP Agua,Basico,56.25
+Reference,D_Almona,JMP Agua,Limitado,0
+Reference,D_Almona,JMP Agua,No mejorado,0
+Reference,D_Almona,JMP Agua,Agua superficial,6.25
+Reference,D_Almona,JMP Agua_seco,Seguro,37.5
+Reference,D_Almona,JMP Agua_seco,Basico,56.25
+Reference,D_Almona,JMP Agua_seco,Limitado,0
+Reference,D_Almona,JMP Agua_seco,No mejorado,0
+Reference,D_Almona,JMP Agua_seco,Agua superficial,6.25
+Reference,D_Almona,JMP Saneamiento,Seguro,6.25
+Reference,D_Almona,JMP Saneamiento,Basico,12.5
+Reference,D_Almona,JMP Saneamiento,Limitado,0
+Reference,D_Almona,JMP Saneamiento,No mejorado,25
+Reference,D_Almona,JMP Saneamiento,Campo abierto,56.25
+Reference,D_Almona,JMP Higiene,Basico,43.75
+Reference,D_Almona,JMP Higiene,Limitado,31.25
+Reference,D_Almona,JMP Higiene,Sin instalacion,12.5
+Reference,D_Almona,JMP Higiene_seco,Basico,43.75
+Reference,D_Almona,JMP Higiene_seco,Limitado,31.25
+Reference,D_Almona,JMP Higiene_seco,Sin instalacion,12.5
+Reference,D_Almona,Carga contaminante al ambiente,,7.05391189
+Reference,D_Salo,JMP Agua,Seguro,0
+Reference,D_Salo,JMP Agua,Basico,30
+Reference,D_Salo,JMP Agua,Limitado,40
+Reference,D_Salo,JMP Agua,No mejorado,0
+Reference,D_Salo,JMP Agua,Agua superficial,30
+Reference,D_Salo,JMP Agua_seco,Seguro,0
+Reference,D_Salo,JMP Agua_seco,Basico,30
+Reference,D_Salo,JMP Agua_seco,Limitado,40
+Reference,D_Salo,JMP Agua_seco,No mejorado,0
+Reference,D_Salo,JMP Agua_seco,Agua superficial,30
+Reference,D_Salo,JMP Saneamiento,Seguro,0
+Reference,D_Salo,JMP Saneamiento,Basico,40
+Reference,D_Salo,JMP Saneamiento,Limitado,0
+Reference,D_Salo,JMP Saneamiento,No mejorado,0
+Reference,D_Salo,JMP Saneamiento,Campo abierto,60
+Reference,D_Salo,JMP Higiene,Basico,10
+Reference,D_Salo,JMP Higiene,Limitado,40
+Reference,D_Salo,JMP Higiene,Sin instalacion,40
+Reference,D_Salo,JMP Higiene_seco,Basico,10
+Reference,D_Salo,JMP Higiene_seco,Limitado,40
+Reference,D_Salo,JMP Higiene_seco,Sin instalacion,40
+Reference,D_Salo,Carga contaminante al ambiente,,2.433426207
+Reference,D_Bolivar,JMP Agua,Seguro,7.6923077
+Reference,D_Bolivar,JMP Agua,Basico,30.7692308
+Reference,D_Bolivar,JMP Agua,Limitado,0
+Reference,D_Bolivar,JMP Agua,No mejorado,7.6923077
+Reference,D_Bolivar,JMP Agua,Agua superficial,53.8461538
+Reference,D_Bolivar,JMP Agua_seco,Seguro,7.6923077
+Reference,D_Bolivar,JMP Agua_seco,Basico,30.7692308
+Reference,D_Bolivar,JMP Agua_seco,Limitado,0
+Reference,D_Bolivar,JMP Agua_seco,No mejorado,7.6923077
+Reference,D_Bolivar,JMP Agua_seco,Agua superficial,53.8461538
+Reference,D_Bolivar,JMP Saneamiento,Seguro,0
+Reference,D_Bolivar,JMP Saneamiento,Basico,46.1538462
+Reference,D_Bolivar,JMP Saneamiento,Limitado,0
+Reference,D_Bolivar,JMP Saneamiento,No mejorado,0
+Reference,D_Bolivar,JMP Saneamiento,Campo abierto,53.8461538
+Reference,D_Bolivar,JMP Higiene,Basico,69.2307692
+Reference,D_Bolivar,JMP Higiene,Limitado,23.0769231
+Reference,D_Bolivar,JMP Higiene,Sin instalacion,0
+Reference,D_Bolivar,JMP Higiene_seco,Basico,69.2307692
+Reference,D_Bolivar,JMP Higiene_seco,Limitado,23.0769231
+Reference,D_Bolivar,JMP Higiene_seco,Sin instalacion,0
+Reference,D_Bolivar,Carga contaminante al ambiente,,5.555692308
+Reference,D_Charahota,JMP Agua,Seguro,31.25
+Reference,D_Charahota,JMP Agua,Basico,50
+Reference,D_Charahota,JMP Agua,Limitado,6.25
+Reference,D_Charahota,JMP Agua,No mejorado,0
+Reference,D_Charahota,JMP Agua,Agua superficial,12.5
+Reference,D_Charahota,JMP Agua_seco,Seguro,31.25
+Reference,D_Charahota,JMP Agua_seco,Basico,50
+Reference,D_Charahota,JMP Agua_seco,Limitado,6.25
+Reference,D_Charahota,JMP Agua_seco,No mejorado,0
+Reference,D_Charahota,JMP Agua_seco,Agua superficial,12.5
+Reference,D_Charahota,JMP Saneamiento,Seguro,12.5
+Reference,D_Charahota,JMP Saneamiento,Basico,25
+Reference,D_Charahota,JMP Saneamiento,Limitado,0
+Reference,D_Charahota,JMP Saneamiento,No mejorado,0
+Reference,D_Charahota,JMP Saneamiento,Campo abierto,62.5
+Reference,D_Charahota,JMP Higiene,Basico,62.5
+Reference,D_Charahota,JMP Higiene,Limitado,31.25
+Reference,D_Charahota,JMP Higiene,Sin instalacion,6.25
+Reference,D_Charahota,JMP Higiene_seco,Basico,62.5
+Reference,D_Charahota,JMP Higiene_seco,Limitado,31.25
+Reference,D_Charahota,JMP Higiene_seco,Sin instalacion,6.25
+Reference,D_Charahota,Carga contaminante al ambiente,,4.487744681
+Reference,D_Chillco1,JMP Agua,Seguro,18.1818182
+Reference,D_Chillco1,JMP Agua,Basico,81.8181818
+Reference,D_Chillco1,JMP Agua,Limitado,0
+Reference,D_Chillco1,JMP Agua,No mejorado,0
+Reference,D_Chillco1,JMP Agua,Agua superficial,0
+Reference,D_Chillco1,JMP Agua_seco,Seguro,18.1818182
+Reference,D_Chillco1,JMP Agua_seco,Basico,81.8181818
+Reference,D_Chillco1,JMP Agua_seco,Limitado,0
+Reference,D_Chillco1,JMP Agua_seco,No mejorado,0
+Reference,D_Chillco1,JMP Agua_seco,Agua superficial,0
+Reference,D_Chillco1,JMP Saneamiento,Seguro,0
+Reference,D_Chillco1,JMP Saneamiento,Basico,36.3636364
+Reference,D_Chillco1,JMP Saneamiento,Limitado,22.7272727
+Reference,D_Chillco1,JMP Saneamiento,No mejorado,0
+Reference,D_Chillco1,JMP Saneamiento,Campo abierto,40.9090909
+Reference,D_Chillco1,JMP Higiene,Basico,72.7272727
+Reference,D_Chillco1,JMP Higiene,Limitado,9.0909091
+Reference,D_Chillco1,JMP Higiene,Sin instalacion,4.5454545
+Reference,D_Chillco1,JMP Higiene_seco,Basico,72.7272727
+Reference,D_Chillco1,JMP Higiene_seco,Limitado,9.0909091
+Reference,D_Chillco1,JMP Higiene_seco,Sin instalacion,4.5454545
+Reference,D_Chillco1,Carga contaminante al ambiente,,2.86488595
+Reference,D_Oploca,JMP Agua,Seguro,0
+Reference,D_Oploca,JMP Agua,Basico,0
+Reference,D_Oploca,JMP Agua,Limitado,0
+Reference,D_Oploca,JMP Agua,No mejorado,50
+Reference,D_Oploca,JMP Agua,Agua superficial,50
+Reference,D_Oploca,JMP Agua_seco,Seguro,0
+Reference,D_Oploca,JMP Agua_seco,Basico,0
+Reference,D_Oploca,JMP Agua_seco,Limitado,0
+Reference,D_Oploca,JMP Agua_seco,No mejorado,50
+Reference,D_Oploca,JMP Agua_seco,Agua superficial,50
+Reference,D_Oploca,JMP Saneamiento,Seguro,0
+Reference,D_Oploca,JMP Saneamiento,Basico,0
+Reference,D_Oploca,JMP Saneamiento,Limitado,0
+Reference,D_Oploca,JMP Saneamiento,No mejorado,0
+Reference,D_Oploca,JMP Saneamiento,Campo abierto,100
+Reference,D_Oploca,JMP Higiene,Basico,50
+Reference,D_Oploca,JMP Higiene,Limitado,25
+Reference,D_Oploca,JMP Higiene,Sin instalacion,25
+Reference,D_Oploca,JMP Higiene_seco,Basico,50
+Reference,D_Oploca,JMP Higiene_seco,Limitado,25
+Reference,D_Oploca,JMP Higiene_seco,Sin instalacion,25
+Reference,D_Oploca,Carga contaminante al ambiente,,1.8088
+Reference,D_PalalaAlta,JMP Agua,Seguro,0
+Reference,D_PalalaAlta,JMP Agua,Basico,60
+Reference,D_PalalaAlta,JMP Agua,Limitado,20
+Reference,D_PalalaAlta,JMP Agua,No mejorado,20
+Reference,D_PalalaAlta,JMP Agua,Agua superficial,0
+Reference,D_PalalaAlta,JMP Agua_seco,Seguro,0
+Reference,D_PalalaAlta,JMP Agua_seco,Basico,60
+Reference,D_PalalaAlta,JMP Agua_seco,Limitado,20
+Reference,D_PalalaAlta,JMP Agua_seco,No mejorado,20
+Reference,D_PalalaAlta,JMP Agua_seco,Agua superficial,0
+Reference,D_PalalaAlta,JMP Saneamiento,Seguro,0
+Reference,D_PalalaAlta,JMP Saneamiento,Basico,20
+Reference,D_PalalaAlta,JMP Saneamiento,Limitado,0
+Reference,D_PalalaAlta,JMP Saneamiento,No mejorado,0
+Reference,D_PalalaAlta,JMP Saneamiento,Campo abierto,80
+Reference,D_PalalaAlta,JMP Higiene,Basico,80
+Reference,D_PalalaAlta,JMP Higiene,Limitado,20
+Reference,D_PalalaAlta,JMP Higiene,Sin instalacion,0
+Reference,D_PalalaAlta,JMP Higiene_seco,Basico,80
+Reference,D_PalalaAlta,JMP Higiene_seco,Limitado,20
+Reference,D_PalalaAlta,JMP Higiene_seco,Sin instalacion,0
+Reference,D_PalalaAlta,Carga contaminante al ambiente,,4.424
+Reference,D_Tupiza,JMP Agua,Seguro,0
+Reference,D_Tupiza,JMP Agua,Basico,0
+Reference,D_Tupiza,JMP Agua,Limitado,0
+Reference,D_Tupiza,JMP Agua,No mejorado,16.6666667
+Reference,D_Tupiza,JMP Agua,Agua superficial,83.3333333
+Reference,D_Tupiza,JMP Agua_seco,Seguro,0
+Reference,D_Tupiza,JMP Agua_seco,Basico,0
+Reference,D_Tupiza,JMP Agua_seco,Limitado,0
+Reference,D_Tupiza,JMP Agua_seco,No mejorado,16.6666667
+Reference,D_Tupiza,JMP Agua_seco,Agua superficial,83.3333333
+Reference,D_Tupiza,JMP Saneamiento,Seguro,0
+Reference,D_Tupiza,JMP Saneamiento,Basico,0
+Reference,D_Tupiza,JMP Saneamiento,Limitado,0
+Reference,D_Tupiza,JMP Saneamiento,No mejorado,16.6666667
+Reference,D_Tupiza,JMP Saneamiento,Campo abierto,83.3333333
+Reference,D_Tupiza,JMP Higiene,Basico,0
+Reference,D_Tupiza,JMP Higiene,Limitado,100
+Reference,D_Tupiza,JMP Higiene,Sin instalacion,0
+Reference,D_Tupiza,JMP Higiene_seco,Basico,0
+Reference,D_Tupiza,JMP Higiene_seco,Limitado,100
+Reference,D_Tupiza,JMP Higiene_seco,Sin instalacion,0
+Reference,D_Tupiza,Carga contaminante al ambiente,,15.95733333
+Reference,D_LaTorre,JMP Agua,Seguro,78.5714286
+Reference,D_LaTorre,JMP Agua,Basico,21.4285714
+Reference,D_LaTorre,JMP Agua,Limitado,0
+Reference,D_LaTorre,JMP Agua,No mejorado,0
+Reference,D_LaTorre,JMP Agua,Agua superficial,0
+Reference,D_LaTorre,JMP Agua_seco,Seguro,78.5714286
+Reference,D_LaTorre,JMP Agua_seco,Basico,21.4285714
+Reference,D_LaTorre,JMP Agua_seco,Limitado,0
+Reference,D_LaTorre,JMP Agua_seco,No mejorado,0
+Reference,D_LaTorre,JMP Agua_seco,Agua superficial,0
+Reference,D_LaTorre,JMP Saneamiento,Seguro,0
+Reference,D_LaTorre,JMP Saneamiento,Basico,7.1428571
+Reference,D_LaTorre,JMP Saneamiento,Limitado,0
+Reference,D_LaTorre,JMP Saneamiento,No mejorado,0
+Reference,D_LaTorre,JMP Saneamiento,Campo abierto,92.8571429
+Reference,D_LaTorre,JMP Higiene,Basico,100
+Reference,D_LaTorre,JMP Higiene,Limitado,0
+Reference,D_LaTorre,JMP Higiene,Sin instalacion,0
+Reference,D_LaTorre,JMP Higiene_seco,Basico,100
+Reference,D_LaTorre,JMP Higiene_seco,Limitado,0
+Reference,D_LaTorre,JMP Higiene_seco,Sin instalacion,0
+Reference,D_LaTorre,Carga contaminante al ambiente,,8.203031806
+Reference,D_Monterico,JMP Agua,Seguro,83.3333333
+Reference,D_Monterico,JMP Agua,Basico,16.6666667
+Reference,D_Monterico,JMP Agua,Limitado,0
+Reference,D_Monterico,JMP Agua,No mejorado,0
+Reference,D_Monterico,JMP Agua,Agua superficial,0
+Reference,D_Monterico,JMP Agua_seco,Seguro,83.3333333
+Reference,D_Monterico,JMP Agua_seco,Basico,16.6666667
+Reference,D_Monterico,JMP Agua_seco,Limitado,0
+Reference,D_Monterico,JMP Agua_seco,No mejorado,0
+Reference,D_Monterico,JMP Agua_seco,Agua superficial,0
+Reference,D_Monterico,JMP Saneamiento,Seguro,8.3333333
+Reference,D_Monterico,JMP Saneamiento,Basico,0
+Reference,D_Monterico,JMP Saneamiento,Limitado,0
+Reference,D_Monterico,JMP Saneamiento,No mejorado,0
+Reference,D_Monterico,JMP Saneamiento,Campo abierto,91.6666667
+Reference,D_Monterico,JMP Higiene,Basico,66.6666667
+Reference,D_Monterico,JMP Higiene,Limitado,8.3333333
+Reference,D_Monterico,JMP Higiene,Sin instalacion,16.6666667
+Reference,D_Monterico,JMP Higiene_seco,Basico,66.6666667
+Reference,D_Monterico,JMP Higiene_seco,Limitado,8.3333333
+Reference,D_Monterico,JMP Higiene_seco,Sin instalacion,16.6666667
+Reference,D_Monterico,Carga contaminante al ambiente,,7.531113333
+Reference1,D_Almona,JMP Agua,Seguro,37.5
+Reference1,D_Almona,JMP Agua,Basico,56.25
+Reference1,D_Almona,JMP Agua,Limitado,0
+Reference1,D_Almona,JMP Agua,No mejorado,0
+Reference1,D_Almona,JMP Agua,Agua superficial,6.25
+Reference1,D_Almona,JMP Agua_seco,Seguro,37.5
+Reference1,D_Almona,JMP Agua_seco,Basico,56.25
+Reference1,D_Almona,JMP Agua_seco,Limitado,0
+Reference1,D_Almona,JMP Agua_seco,No mejorado,0
+Reference1,D_Almona,JMP Agua_seco,Agua superficial,6.25
+Reference1,D_Almona,JMP Saneamiento,Seguro,6.25
+Reference1,D_Almona,JMP Saneamiento,Basico,12.5
+Reference1,D_Almona,JMP Saneamiento,Limitado,0
+Reference1,D_Almona,JMP Saneamiento,No mejorado,25
+Reference1,D_Almona,JMP Saneamiento,Campo abierto,56.25
+Reference1,D_Almona,JMP Higiene,Basico,43.75
+Reference1,D_Almona,JMP Higiene,Limitado,31.25
+Reference1,D_Almona,JMP Higiene,Sin instalacion,12.5
+Reference1,D_Almona,JMP Higiene_seco,Basico,43.75
+Reference1,D_Almona,JMP Higiene_seco,Limitado,31.25
+Reference1,D_Almona,JMP Higiene_seco,Sin instalacion,12.5
+Reference1,D_Almona,Carga contaminante al ambiente,,7.05391189
+Reference1,D_Salo,JMP Agua,Seguro,0
+Reference1,D_Salo,JMP Agua,Basico,30
+Reference1,D_Salo,JMP Agua,Limitado,40
+Reference1,D_Salo,JMP Agua,No mejorado,0
+Reference1,D_Salo,JMP Agua,Agua superficial,30
+Reference1,D_Salo,JMP Agua_seco,Seguro,0
+Reference1,D_Salo,JMP Agua_seco,Basico,30
+Reference1,D_Salo,JMP Agua_seco,Limitado,40
+Reference1,D_Salo,JMP Agua_seco,No mejorado,0
+Reference1,D_Salo,JMP Agua_seco,Agua superficial,30
+Reference1,D_Salo,JMP Saneamiento,Seguro,0
+Reference1,D_Salo,JMP Saneamiento,Basico,40
+Reference1,D_Salo,JMP Saneamiento,Limitado,0
+Reference1,D_Salo,JMP Saneamiento,No mejorado,0
+Reference1,D_Salo,JMP Saneamiento,Campo abierto,60
+Reference1,D_Salo,JMP Higiene,Basico,10
+Reference1,D_Salo,JMP Higiene,Limitado,40
+Reference1,D_Salo,JMP Higiene,Sin instalacion,40
+Reference1,D_Salo,JMP Higiene_seco,Basico,10
+Reference1,D_Salo,JMP Higiene_seco,Limitado,40
+Reference1,D_Salo,JMP Higiene_seco,Sin instalacion,40
+Reference1,D_Salo,Carga contaminante al ambiente,,2.433426207
+Reference1,D_Bolivar,JMP Agua,Seguro,7.6923077
+Reference1,D_Bolivar,JMP Agua,Basico,30.7692308
+Reference1,D_Bolivar,JMP Agua,Limitado,0
+Reference1,D_Bolivar,JMP Agua,No mejorado,7.6923077
+Reference1,D_Bolivar,JMP Agua,Agua superficial,53.8461538
+Reference1,D_Bolivar,JMP Agua_seco,Seguro,7.6923077
+Reference1,D_Bolivar,JMP Agua_seco,Basico,30.7692308
+Reference1,D_Bolivar,JMP Agua_seco,Limitado,0
+Reference1,D_Bolivar,JMP Agua_seco,No mejorado,7.6923077
+Reference1,D_Bolivar,JMP Agua_seco,Agua superficial,53.8461538
+Reference1,D_Bolivar,JMP Saneamiento,Seguro,0
+Reference1,D_Bolivar,JMP Saneamiento,Basico,46.1538462
+Reference1,D_Bolivar,JMP Saneamiento,Limitado,0
+Reference1,D_Bolivar,JMP Saneamiento,No mejorado,0
+Reference1,D_Bolivar,JMP Saneamiento,Campo abierto,53.8461538
+Reference1,D_Bolivar,JMP Higiene,Basico,69.2307692
+Reference1,D_Bolivar,JMP Higiene,Limitado,23.0769231
+Reference1,D_Bolivar,JMP Higiene,Sin instalacion,0
+Reference1,D_Bolivar,JMP Higiene_seco,Basico,69.2307692
+Reference1,D_Bolivar,JMP Higiene_seco,Limitado,23.0769231
+Reference1,D_Bolivar,JMP Higiene_seco,Sin instalacion,0
+Reference1,D_Bolivar,Carga contaminante al ambiente,,5.555692308
+Reference1,D_Charahota,JMP Agua,Seguro,31.25
+Reference1,D_Charahota,JMP Agua,Basico,50
+Reference1,D_Charahota,JMP Agua,Limitado,6.25
+Reference1,D_Charahota,JMP Agua,No mejorado,0
+Reference1,D_Charahota,JMP Agua,Agua superficial,12.5
+Reference1,D_Charahota,JMP Agua_seco,Seguro,31.25
+Reference1,D_Charahota,JMP Agua_seco,Basico,50
+Reference1,D_Charahota,JMP Agua_seco,Limitado,6.25
+Reference1,D_Charahota,JMP Agua_seco,No mejorado,0
+Reference1,D_Charahota,JMP Agua_seco,Agua superficial,12.5
+Reference1,D_Charahota,JMP Saneamiento,Seguro,12.5
+Reference1,D_Charahota,JMP Saneamiento,Basico,25
+Reference1,D_Charahota,JMP Saneamiento,Limitado,0
+Reference1,D_Charahota,JMP Saneamiento,No mejorado,0
+Reference1,D_Charahota,JMP Saneamiento,Campo abierto,62.5
+Reference1,D_Charahota,JMP Higiene,Basico,62.5
+Reference1,D_Charahota,JMP Higiene,Limitado,31.25
+Reference1,D_Charahota,JMP Higiene,Sin instalacion,6.25
+Reference1,D_Charahota,JMP Higiene_seco,Basico,62.5
+Reference1,D_Charahota,JMP Higiene_seco,Limitado,31.25
+Reference1,D_Charahota,JMP Higiene_seco,Sin instalacion,6.25
+Reference1,D_Charahota,Carga contaminante al ambiente,,4.487744681
+Reference1,D_Chillco1,JMP Agua,Seguro,18.1818182
+Reference1,D_Chillco1,JMP Agua,Basico,81.8181818
+Reference1,D_Chillco1,JMP Agua,Limitado,0
+Reference1,D_Chillco1,JMP Agua,No mejorado,0
+Reference1,D_Chillco1,JMP Agua,Agua superficial,0
+Reference1,D_Chillco1,JMP Agua_seco,Seguro,18.1818182
+Reference1,D_Chillco1,JMP Agua_seco,Basico,81.8181818
+Reference1,D_Chillco1,JMP Agua_seco,Limitado,0
+Reference1,D_Chillco1,JMP Agua_seco,No mejorado,0
+Reference1,D_Chillco1,JMP Agua_seco,Agua superficial,0
+Reference1,D_Chillco1,JMP Saneamiento,Seguro,0
+Reference1,D_Chillco1,JMP Saneamiento,Basico,36.3636364
+Reference1,D_Chillco1,JMP Saneamiento,Limitado,22.7272727
+Reference1,D_Chillco1,JMP Saneamiento,No mejorado,0
+Reference1,D_Chillco1,JMP Saneamiento,Campo abierto,40.9090909
+Reference1,D_Chillco1,JMP Higiene,Basico,72.7272727
+Reference1,D_Chillco1,JMP Higiene,Limitado,9.0909091
+Reference1,D_Chillco1,JMP Higiene,Sin instalacion,4.5454545
+Reference1,D_Chillco1,JMP Higiene_seco,Basico,72.7272727
+Reference1,D_Chillco1,JMP Higiene_seco,Limitado,9.0909091
+Reference1,D_Chillco1,JMP Higiene_seco,Sin instalacion,4.5454545
+Reference1,D_Chillco1,Carga contaminante al ambiente,,2.86488595
+Reference1,D_Oploca,JMP Agua,Seguro,0
+Reference1,D_Oploca,JMP Agua,Basico,0
+Reference1,D_Oploca,JMP Agua,Limitado,0
+Reference1,D_Oploca,JMP Agua,No mejorado,50
+Reference1,D_Oploca,JMP Agua,Agua superficial,50
+Reference1,D_Oploca,JMP Agua_seco,Seguro,0
+Reference1,D_Oploca,JMP Agua_seco,Basico,0
+Reference1,D_Oploca,JMP Agua_seco,Limitado,0
+Reference1,D_Oploca,JMP Agua_seco,No mejorado,50
+Reference1,D_Oploca,JMP Agua_seco,Agua superficial,50
+Reference1,D_Oploca,JMP Saneamiento,Seguro,0
+Reference1,D_Oploca,JMP Saneamiento,Basico,0
+Reference1,D_Oploca,JMP Saneamiento,Limitado,0
+Reference1,D_Oploca,JMP Saneamiento,No mejorado,0
+Reference1,D_Oploca,JMP Saneamiento,Campo abierto,100
+Reference1,D_Oploca,JMP Higiene,Basico,50
+Reference1,D_Oploca,JMP Higiene,Limitado,25
+Reference1,D_Oploca,JMP Higiene,Sin instalacion,25
+Reference1,D_Oploca,JMP Higiene_seco,Basico,50
+Reference1,D_Oploca,JMP Higiene_seco,Limitado,25
+Reference1,D_Oploca,JMP Higiene_seco,Sin instalacion,25
+Reference1,D_Oploca,Carga contaminante al ambiente,,1.8088
+Reference1,D_PalalaAlta,JMP Agua,Seguro,0
+Reference1,D_PalalaAlta,JMP Agua,Basico,60
+Reference1,D_PalalaAlta,JMP Agua,Limitado,20
+Reference1,D_PalalaAlta,JMP Agua,No mejorado,20
+Reference1,D_PalalaAlta,JMP Agua,Agua superficial,0
+Reference1,D_PalalaAlta,JMP Agua_seco,Seguro,0
+Reference1,D_PalalaAlta,JMP Agua_seco,Basico,60
+Reference1,D_PalalaAlta,JMP Agua_seco,Limitado,20
+Reference1,D_PalalaAlta,JMP Agua_seco,No mejorado,20
+Reference1,D_PalalaAlta,JMP Agua_seco,Agua superficial,0
+Reference1,D_PalalaAlta,JMP Saneamiento,Seguro,0
+Reference1,D_PalalaAlta,JMP Saneamiento,Basico,20
+Reference1,D_PalalaAlta,JMP Saneamiento,Limitado,0
+Reference1,D_PalalaAlta,JMP Saneamiento,No mejorado,0
+Reference1,D_PalalaAlta,JMP Saneamiento,Campo abierto,80
+Reference1,D_PalalaAlta,JMP Higiene,Basico,80
+Reference1,D_PalalaAlta,JMP Higiene,Limitado,20
+Reference1,D_PalalaAlta,JMP Higiene,Sin instalacion,0
+Reference1,D_PalalaAlta,JMP Higiene_seco,Basico,80
+Reference1,D_PalalaAlta,JMP Higiene_seco,Limitado,20
+Reference1,D_PalalaAlta,JMP Higiene_seco,Sin instalacion,0
+Reference1,D_PalalaAlta,Carga contaminante al ambiente,,4.424
+Reference1,D_Tupiza,JMP Agua,Seguro,0
+Reference1,D_Tupiza,JMP Agua,Basico,0
+Reference1,D_Tupiza,JMP Agua,Limitado,0
+Reference1,D_Tupiza,JMP Agua,No mejorado,16.6666667
+Reference1,D_Tupiza,JMP Agua,Agua superficial,83.3333333
+Reference1,D_Tupiza,JMP Agua_seco,Seguro,0
+Reference1,D_Tupiza,JMP Agua_seco,Basico,0
+Reference1,D_Tupiza,JMP Agua_seco,Limitado,0
+Reference1,D_Tupiza,JMP Agua_seco,No mejorado,16.6666667
+Reference1,D_Tupiza,JMP Agua_seco,Agua superficial,83.3333333
+Reference1,D_Tupiza,JMP Saneamiento,Seguro,0
+Reference1,D_Tupiza,JMP Saneamiento,Basico,0
+Reference1,D_Tupiza,JMP Saneamiento,Limitado,0
+Reference1,D_Tupiza,JMP Saneamiento,No mejorado,16.6666667
+Reference1,D_Tupiza,JMP Saneamiento,Campo abierto,83.3333333
+Reference1,D_Tupiza,JMP Higiene,Basico,0
+Reference1,D_Tupiza,JMP Higiene,Limitado,100
+Reference1,D_Tupiza,JMP Higiene,Sin instalacion,0
+Reference1,D_Tupiza,JMP Higiene_seco,Basico,0
+Reference1,D_Tupiza,JMP Higiene_seco,Limitado,100
+Reference1,D_Tupiza,JMP Higiene_seco,Sin instalacion,0
+Reference1,D_Tupiza,Carga contaminante al ambiente,,15.95733333
+Reference1,D_LaTorre,JMP Agua,Seguro,78.5714286
+Reference1,D_LaTorre,JMP Agua,Basico,21.4285714
+Reference1,D_LaTorre,JMP Agua,Limitado,0
+Reference1,D_LaTorre,JMP Agua,No mejorado,0
+Reference1,D_LaTorre,JMP Agua,Agua superficial,0
+Reference1,D_LaTorre,JMP Agua_seco,Seguro,78.5714286
+Reference1,D_LaTorre,JMP Agua_seco,Basico,21.4285714
+Reference1,D_LaTorre,JMP Agua_seco,Limitado,0
+Reference1,D_LaTorre,JMP Agua_seco,No mejorado,0
+Reference1,D_LaTorre,JMP Agua_seco,Agua superficial,0
+Reference1,D_LaTorre,JMP Saneamiento,Seguro,0
+Reference1,D_LaTorre,JMP Saneamiento,Basico,7.1428571
+Reference1,D_LaTorre,JMP Saneamiento,Limitado,0
+Reference1,D_LaTorre,JMP Saneamiento,No mejorado,0
+Reference1,D_LaTorre,JMP Saneamiento,Campo abierto,92.8571429
+Reference1,D_LaTorre,JMP Higiene,Basico,100
+Reference1,D_LaTorre,JMP Higiene,Limitado,0
+Reference1,D_LaTorre,JMP Higiene,Sin instalacion,0
+Reference1,D_LaTorre,JMP Higiene_seco,Basico,100
+Reference1,D_LaTorre,JMP Higiene_seco,Limitado,0
+Reference1,D_LaTorre,JMP Higiene_seco,Sin instalacion,0
+Reference1,D_LaTorre,Carga contaminante al ambiente,,8.203031806
+Reference1,D_Monterico,JMP Agua,Seguro,83.3333333
+Reference1,D_Monterico,JMP Agua,Basico,16.6666667
+Reference1,D_Monterico,JMP Agua,Limitado,0
+Reference1,D_Monterico,JMP Agua,No mejorado,0
+Reference1,D_Monterico,JMP Agua,Agua superficial,0
+Reference1,D_Monterico,JMP Agua_seco,Seguro,83.3333333
+Reference1,D_Monterico,JMP Agua_seco,Basico,16.6666667
+Reference1,D_Monterico,JMP Agua_seco,Limitado,0
+Reference1,D_Monterico,JMP Agua_seco,No mejorado,0
+Reference1,D_Monterico,JMP Agua_seco,Agua superficial,0
+Reference1,D_Monterico,JMP Saneamiento,Seguro,8.3333333
+Reference1,D_Monterico,JMP Saneamiento,Basico,0
+Reference1,D_Monterico,JMP Saneamiento,Limitado,0
+Reference1,D_Monterico,JMP Saneamiento,No mejorado,0
+Reference1,D_Monterico,JMP Saneamiento,Campo abierto,91.6666667
+Reference1,D_Monterico,JMP Higiene,Basico,66.6666667
+Reference1,D_Monterico,JMP Higiene,Limitado,8.3333333
+Reference1,D_Monterico,JMP Higiene,Sin instalacion,16.6666667
+Reference1,D_Monterico,JMP Higiene_seco,Basico,66.6666667
+Reference1,D_Monterico,JMP Higiene_seco,Limitado,8.3333333
+Reference1,D_Monterico,JMP Higiene_seco,Sin instalacion,16.6666667
+Reference1,D_Monterico,Carga contaminante al ambiente,,7.531113333
+Reference2,D_Almona,JMP Agua,Seguro,37.5
+Reference2,D_Almona,JMP Agua,Basico,56.25
+Reference2,D_Almona,JMP Agua,Limitado,0
+Reference2,D_Almona,JMP Agua,No mejorado,0
+Reference2,D_Almona,JMP Agua,Agua superficial,6.25
+Reference2,D_Almona,JMP Agua_seco,Seguro,37.5
+Reference2,D_Almona,JMP Agua_seco,Basico,56.25
+Reference2,D_Almona,JMP Agua_seco,Limitado,0
+Reference2,D_Almona,JMP Agua_seco,No mejorado,0
+Reference2,D_Almona,JMP Agua_seco,Agua superficial,6.25
+Reference2,D_Almona,JMP Saneamiento,Seguro,6.25
+Reference2,D_Almona,JMP Saneamiento,Basico,12.5
+Reference2,D_Almona,JMP Saneamiento,Limitado,0
+Reference2,D_Almona,JMP Saneamiento,No mejorado,25
+Reference2,D_Almona,JMP Saneamiento,Campo abierto,56.25
+Reference2,D_Almona,JMP Higiene,Basico,43.75
+Reference2,D_Almona,JMP Higiene,Limitado,31.25
+Reference2,D_Almona,JMP Higiene,Sin instalacion,12.5
+Reference2,D_Almona,JMP Higiene_seco,Basico,43.75
+Reference2,D_Almona,JMP Higiene_seco,Limitado,31.25
+Reference2,D_Almona,JMP Higiene_seco,Sin instalacion,12.5
+Reference2,D_Almona,Carga contaminante al ambiente,,7.05391189
+Reference2,D_Salo,JMP Agua,Seguro,0
+Reference2,D_Salo,JMP Agua,Basico,30
+Reference2,D_Salo,JMP Agua,Limitado,40
+Reference2,D_Salo,JMP Agua,No mejorado,0
+Reference2,D_Salo,JMP Agua,Agua superficial,30
+Reference2,D_Salo,JMP Agua_seco,Seguro,0
+Reference2,D_Salo,JMP Agua_seco,Basico,30
+Reference2,D_Salo,JMP Agua_seco,Limitado,40
+Reference2,D_Salo,JMP Agua_seco,No mejorado,0
+Reference2,D_Salo,JMP Agua_seco,Agua superficial,30
+Reference2,D_Salo,JMP Saneamiento,Seguro,0
+Reference2,D_Salo,JMP Saneamiento,Basico,40
+Reference2,D_Salo,JMP Saneamiento,Limitado,0
+Reference2,D_Salo,JMP Saneamiento,No mejorado,0
+Reference2,D_Salo,JMP Saneamiento,Campo abierto,60
+Reference2,D_Salo,JMP Higiene,Basico,10
+Reference2,D_Salo,JMP Higiene,Limitado,40
+Reference2,D_Salo,JMP Higiene,Sin instalacion,40
+Reference2,D_Salo,JMP Higiene_seco,Basico,10
+Reference2,D_Salo,JMP Higiene_seco,Limitado,40
+Reference2,D_Salo,JMP Higiene_seco,Sin instalacion,40
+Reference2,D_Salo,Carga contaminante al ambiente,,2.433426207
+Reference2,D_Bolivar,JMP Agua,Seguro,7.6923077
+Reference2,D_Bolivar,JMP Agua,Basico,30.7692308
+Reference2,D_Bolivar,JMP Agua,Limitado,0
+Reference2,D_Bolivar,JMP Agua,No mejorado,7.6923077
+Reference2,D_Bolivar,JMP Agua,Agua superficial,53.8461538
+Reference2,D_Bolivar,JMP Agua_seco,Seguro,7.6923077
+Reference2,D_Bolivar,JMP Agua_seco,Basico,30.7692308
+Reference2,D_Bolivar,JMP Agua_seco,Limitado,0
+Reference2,D_Bolivar,JMP Agua_seco,No mejorado,7.6923077
+Reference2,D_Bolivar,JMP Agua_seco,Agua superficial,53.8461538
+Reference2,D_Bolivar,JMP Saneamiento,Seguro,0
+Reference2,D_Bolivar,JMP Saneamiento,Basico,46.1538462
+Reference2,D_Bolivar,JMP Saneamiento,Limitado,0
+Reference2,D_Bolivar,JMP Saneamiento,No mejorado,0
+Reference2,D_Bolivar,JMP Saneamiento,Campo abierto,53.8461538
+Reference2,D_Bolivar,JMP Higiene,Basico,69.2307692
+Reference2,D_Bolivar,JMP Higiene,Limitado,23.0769231
+Reference2,D_Bolivar,JMP Higiene,Sin instalacion,0
+Reference2,D_Bolivar,JMP Higiene_seco,Basico,69.2307692
+Reference2,D_Bolivar,JMP Higiene_seco,Limitado,23.0769231
+Reference2,D_Bolivar,JMP Higiene_seco,Sin instalacion,0
+Reference2,D_Bolivar,Carga contaminante al ambiente,,5.555692308
+Reference2,D_Charahota,JMP Agua,Seguro,31.25
+Reference2,D_Charahota,JMP Agua,Basico,50
+Reference2,D_Charahota,JMP Agua,Limitado,6.25
+Reference2,D_Charahota,JMP Agua,No mejorado,0
+Reference2,D_Charahota,JMP Agua,Agua superficial,12.5
+Reference2,D_Charahota,JMP Agua_seco,Seguro,31.25
+Reference2,D_Charahota,JMP Agua_seco,Basico,50
+Reference2,D_Charahota,JMP Agua_seco,Limitado,6.25
+Reference2,D_Charahota,JMP Agua_seco,No mejorado,0
+Reference2,D_Charahota,JMP Agua_seco,Agua superficial,12.5
+Reference2,D_Charahota,JMP Saneamiento,Seguro,12.5
+Reference2,D_Charahota,JMP Saneamiento,Basico,25
+Reference2,D_Charahota,JMP Saneamiento,Limitado,0
+Reference2,D_Charahota,JMP Saneamiento,No mejorado,0
+Reference2,D_Charahota,JMP Saneamiento,Campo abierto,62.5
+Reference2,D_Charahota,JMP Higiene,Basico,62.5
+Reference2,D_Charahota,JMP Higiene,Limitado,31.25
+Reference2,D_Charahota,JMP Higiene,Sin instalacion,6.25
+Reference2,D_Charahota,JMP Higiene_seco,Basico,62.5
+Reference2,D_Charahota,JMP Higiene_seco,Limitado,31.25
+Reference2,D_Charahota,JMP Higiene_seco,Sin instalacion,6.25
+Reference2,D_Charahota,Carga contaminante al ambiente,,4.487744681
+Reference2,D_Chillco1,JMP Agua,Seguro,18.1818182
+Reference2,D_Chillco1,JMP Agua,Basico,81.8181818
+Reference2,D_Chillco1,JMP Agua,Limitado,0
+Reference2,D_Chillco1,JMP Agua,No mejorado,0
+Reference2,D_Chillco1,JMP Agua,Agua superficial,0
+Reference2,D_Chillco1,JMP Agua_seco,Seguro,18.1818182
+Reference2,D_Chillco1,JMP Agua_seco,Basico,81.8181818
+Reference2,D_Chillco1,JMP Agua_seco,Limitado,0
+Reference2,D_Chillco1,JMP Agua_seco,No mejorado,0
+Reference2,D_Chillco1,JMP Agua_seco,Agua superficial,0
+Reference2,D_Chillco1,JMP Saneamiento,Seguro,0
+Reference2,D_Chillco1,JMP Saneamiento,Basico,36.3636364
+Reference2,D_Chillco1,JMP Saneamiento,Limitado,22.7272727
+Reference2,D_Chillco1,JMP Saneamiento,No mejorado,0
+Reference2,D_Chillco1,JMP Saneamiento,Campo abierto,40.9090909
+Reference2,D_Chillco1,JMP Higiene,Basico,72.7272727
+Reference2,D_Chillco1,JMP Higiene,Limitado,9.0909091
+Reference2,D_Chillco1,JMP Higiene,Sin instalacion,4.5454545
+Reference2,D_Chillco1,JMP Higiene_seco,Basico,72.7272727
+Reference2,D_Chillco1,JMP Higiene_seco,Limitado,9.0909091
+Reference2,D_Chillco1,JMP Higiene_seco,Sin instalacion,4.5454545
+Reference2,D_Chillco1,Carga contaminante al ambiente,,2.86488595
+Reference2,D_Oploca,JMP Agua,Seguro,0
+Reference2,D_Oploca,JMP Agua,Basico,0
+Reference2,D_Oploca,JMP Agua,Limitado,0
+Reference2,D_Oploca,JMP Agua,No mejorado,50
+Reference2,D_Oploca,JMP Agua,Agua superficial,50
+Reference2,D_Oploca,JMP Agua_seco,Seguro,0
+Reference2,D_Oploca,JMP Agua_seco,Basico,0
+Reference2,D_Oploca,JMP Agua_seco,Limitado,0
+Reference2,D_Oploca,JMP Agua_seco,No mejorado,50
+Reference2,D_Oploca,JMP Agua_seco,Agua superficial,50
+Reference2,D_Oploca,JMP Saneamiento,Seguro,0
+Reference2,D_Oploca,JMP Saneamiento,Basico,0
+Reference2,D_Oploca,JMP Saneamiento,Limitado,0
+Reference2,D_Oploca,JMP Saneamiento,No mejorado,0
+Reference2,D_Oploca,JMP Saneamiento,Campo abierto,100
+Reference2,D_Oploca,JMP Higiene,Basico,50
+Reference2,D_Oploca,JMP Higiene,Limitado,25
+Reference2,D_Oploca,JMP Higiene,Sin instalacion,25
+Reference2,D_Oploca,JMP Higiene_seco,Basico,50
+Reference2,D_Oploca,JMP Higiene_seco,Limitado,25
+Reference2,D_Oploca,JMP Higiene_seco,Sin instalacion,25
+Reference2,D_Oploca,Carga contaminante al ambiente,,1.8088
+Reference2,D_PalalaAlta,JMP Agua,Seguro,0
+Reference2,D_PalalaAlta,JMP Agua,Basico,60
+Reference2,D_PalalaAlta,JMP Agua,Limitado,20
+Reference2,D_PalalaAlta,JMP Agua,No mejorado,20
+Reference2,D_PalalaAlta,JMP Agua,Agua superficial,0
+Reference2,D_PalalaAlta,JMP Agua_seco,Seguro,0
+Reference2,D_PalalaAlta,JMP Agua_seco,Basico,60
+Reference2,D_PalalaAlta,JMP Agua_seco,Limitado,20
+Reference2,D_PalalaAlta,JMP Agua_seco,No mejorado,20
+Reference2,D_PalalaAlta,JMP Agua_seco,Agua superficial,0
+Reference2,D_PalalaAlta,JMP Saneamiento,Seguro,0
+Reference2,D_PalalaAlta,JMP Saneamiento,Basico,20
+Reference2,D_PalalaAlta,JMP Saneamiento,Limitado,0
+Reference2,D_PalalaAlta,JMP Saneamiento,No mejorado,0
+Reference2,D_PalalaAlta,JMP Saneamiento,Campo abierto,80
+Reference2,D_PalalaAlta,JMP Higiene,Basico,80
+Reference2,D_PalalaAlta,JMP Higiene,Limitado,20
+Reference2,D_PalalaAlta,JMP Higiene,Sin instalacion,0
+Reference2,D_PalalaAlta,JMP Higiene_seco,Basico,80
+Reference2,D_PalalaAlta,JMP Higiene_seco,Limitado,20
+Reference2,D_PalalaAlta,JMP Higiene_seco,Sin instalacion,0
+Reference2,D_PalalaAlta,Carga contaminante al ambiente,,4.424
+Reference2,D_Tupiza,JMP Agua,Seguro,0
+Reference2,D_Tupiza,JMP Agua,Basico,0
+Reference2,D_Tupiza,JMP Agua,Limitado,0
+Reference2,D_Tupiza,JMP Agua,No mejorado,16.6666667
+Reference2,D_Tupiza,JMP Agua,Agua superficial,83.3333333
+Reference2,D_Tupiza,JMP Agua_seco,Seguro,0
+Reference2,D_Tupiza,JMP Agua_seco,Basico,0
+Reference2,D_Tupiza,JMP Agua_seco,Limitado,0
+Reference2,D_Tupiza,JMP Agua_seco,No mejorado,16.6666667
+Reference2,D_Tupiza,JMP Agua_seco,Agua superficial,83.3333333
+Reference2,D_Tupiza,JMP Saneamiento,Seguro,0
+Reference2,D_Tupiza,JMP Saneamiento,Basico,0
+Reference2,D_Tupiza,JMP Saneamiento,Limitado,0
+Reference2,D_Tupiza,JMP Saneamiento,No mejorado,16.6666667
+Reference2,D_Tupiza,JMP Saneamiento,Campo abierto,83.3333333
+Reference2,D_Tupiza,JMP Higiene,Basico,0
+Reference2,D_Tupiza,JMP Higiene,Limitado,100
+Reference2,D_Tupiza,JMP Higiene,Sin instalacion,0
+Reference2,D_Tupiza,JMP Higiene_seco,Basico,0
+Reference2,D_Tupiza,JMP Higiene_seco,Limitado,100
+Reference2,D_Tupiza,JMP Higiene_seco,Sin instalacion,0
+Reference2,D_Tupiza,Carga contaminante al ambiente,,15.95733333
+Reference2,D_LaTorre,JMP Agua,Seguro,78.5714286
+Reference2,D_LaTorre,JMP Agua,Basico,21.4285714
+Reference2,D_LaTorre,JMP Agua,Limitado,0
+Reference2,D_LaTorre,JMP Agua,No mejorado,0
+Reference2,D_LaTorre,JMP Agua,Agua superficial,0
+Reference2,D_LaTorre,JMP Agua_seco,Seguro,78.5714286
+Reference2,D_LaTorre,JMP Agua_seco,Basico,21.4285714
+Reference2,D_LaTorre,JMP Agua_seco,Limitado,0
+Reference2,D_LaTorre,JMP Agua_seco,No mejorado,0
+Reference2,D_LaTorre,JMP Agua_seco,Agua superficial,0
+Reference2,D_LaTorre,JMP Saneamiento,Seguro,0
+Reference2,D_LaTorre,JMP Saneamiento,Basico,7.1428571
+Reference2,D_LaTorre,JMP Saneamiento,Limitado,0
+Reference2,D_LaTorre,JMP Saneamiento,No mejorado,0
+Reference2,D_LaTorre,JMP Saneamiento,Campo abierto,92.8571429
+Reference2,D_LaTorre,JMP Higiene,Basico,100
+Reference2,D_LaTorre,JMP Higiene,Limitado,0
+Reference2,D_LaTorre,JMP Higiene,Sin instalacion,0
+Reference2,D_LaTorre,JMP Higiene_seco,Basico,100
+Reference2,D_LaTorre,JMP Higiene_seco,Limitado,0
+Reference2,D_LaTorre,JMP Higiene_seco,Sin instalacion,0
+Reference2,D_LaTorre,Carga contaminante al ambiente,,8.203031806
+Reference2,D_Monterico,JMP Agua,Seguro,83.3333333
+Reference2,D_Monterico,JMP Agua,Basico,16.6666667
+Reference2,D_Monterico,JMP Agua,Limitado,0
+Reference2,D_Monterico,JMP Agua,No mejorado,0
+Reference2,D_Monterico,JMP Agua,Agua superficial,0
+Reference2,D_Monterico,JMP Agua_seco,Seguro,83.3333333
+Reference2,D_Monterico,JMP Agua_seco,Basico,16.6666667
+Reference2,D_Monterico,JMP Agua_seco,Limitado,0
+Reference2,D_Monterico,JMP Agua_seco,No mejorado,0
+Reference2,D_Monterico,JMP Agua_seco,Agua superficial,0
+Reference2,D_Monterico,JMP Saneamiento,Seguro,8.3333333
+Reference2,D_Monterico,JMP Saneamiento,Basico,0
+Reference2,D_Monterico,JMP Saneamiento,Limitado,0
+Reference2,D_Monterico,JMP Saneamiento,No mejorado,0
+Reference2,D_Monterico,JMP Saneamiento,Campo abierto,91.6666667
+Reference2,D_Monterico,JMP Higiene,Basico,66.6666667
+Reference2,D_Monterico,JMP Higiene,Limitado,8.3333333
+Reference2,D_Monterico,JMP Higiene,Sin instalacion,16.6666667
+Reference2,D_Monterico,JMP Higiene_seco,Basico,66.6666667
+Reference2,D_Monterico,JMP Higiene_seco,Limitado,8.3333333
+Reference2,D_Monterico,JMP Higiene_seco,Sin instalacion,16.6666667
+Reference2,D_Monterico,Carga contaminante al ambiente,,7.531113333
+Reference3,D_Almona,JMP Agua,Seguro,37.5
+Reference3,D_Almona,JMP Agua,Basico,56.25
+Reference3,D_Almona,JMP Agua,Limitado,0
+Reference3,D_Almona,JMP Agua,No mejorado,0
+Reference3,D_Almona,JMP Agua,Agua superficial,6.25
+Reference3,D_Almona,JMP Agua_seco,Seguro,37.5
+Reference3,D_Almona,JMP Agua_seco,Basico,56.25
+Reference3,D_Almona,JMP Agua_seco,Limitado,0
+Reference3,D_Almona,JMP Agua_seco,No mejorado,0
+Reference3,D_Almona,JMP Agua_seco,Agua superficial,6.25
+Reference3,D_Almona,JMP Saneamiento,Seguro,6.25
+Reference3,D_Almona,JMP Saneamiento,Basico,12.5
+Reference3,D_Almona,JMP Saneamiento,Limitado,0
+Reference3,D_Almona,JMP Saneamiento,No mejorado,25
+Reference3,D_Almona,JMP Saneamiento,Campo abierto,56.25
+Reference3,D_Almona,JMP Higiene,Basico,43.75
+Reference3,D_Almona,JMP Higiene,Limitado,31.25
+Reference3,D_Almona,JMP Higiene,Sin instalacion,12.5
+Reference3,D_Almona,JMP Higiene_seco,Basico,43.75
+Reference3,D_Almona,JMP Higiene_seco,Limitado,31.25
+Reference3,D_Almona,JMP Higiene_seco,Sin instalacion,12.5
+Reference3,D_Almona,Carga contaminante al ambiente,,7.05391189
+Reference3,D_Salo,JMP Agua,Seguro,0
+Reference3,D_Salo,JMP Agua,Basico,30
+Reference3,D_Salo,JMP Agua,Limitado,40
+Reference3,D_Salo,JMP Agua,No mejorado,0
+Reference3,D_Salo,JMP Agua,Agua superficial,30
+Reference3,D_Salo,JMP Agua_seco,Seguro,0
+Reference3,D_Salo,JMP Agua_seco,Basico,30
+Reference3,D_Salo,JMP Agua_seco,Limitado,40
+Reference3,D_Salo,JMP Agua_seco,No mejorado,0
+Reference3,D_Salo,JMP Agua_seco,Agua superficial,30
+Reference3,D_Salo,JMP Saneamiento,Seguro,0
+Reference3,D_Salo,JMP Saneamiento,Basico,40
+Reference3,D_Salo,JMP Saneamiento,Limitado,0
+Reference3,D_Salo,JMP Saneamiento,No mejorado,0
+Reference3,D_Salo,JMP Saneamiento,Campo abierto,60
+Reference3,D_Salo,JMP Higiene,Basico,10
+Reference3,D_Salo,JMP Higiene,Limitado,40
+Reference3,D_Salo,JMP Higiene,Sin instalacion,40
+Reference3,D_Salo,JMP Higiene_seco,Basico,10
+Reference3,D_Salo,JMP Higiene_seco,Limitado,40
+Reference3,D_Salo,JMP Higiene_seco,Sin instalacion,40
+Reference3,D_Salo,Carga contaminante al ambiente,,2.433426207
+Reference3,D_Bolivar,JMP Agua,Seguro,7.6923077
+Reference3,D_Bolivar,JMP Agua,Basico,30.7692308
+Reference3,D_Bolivar,JMP Agua,Limitado,0
+Reference3,D_Bolivar,JMP Agua,No mejorado,7.6923077
+Reference3,D_Bolivar,JMP Agua,Agua superficial,53.8461538
+Reference3,D_Bolivar,JMP Agua_seco,Seguro,7.6923077
+Reference3,D_Bolivar,JMP Agua_seco,Basico,30.7692308
+Reference3,D_Bolivar,JMP Agua_seco,Limitado,0
+Reference3,D_Bolivar,JMP Agua_seco,No mejorado,7.6923077
+Reference3,D_Bolivar,JMP Agua_seco,Agua superficial,53.8461538
+Reference3,D_Bolivar,JMP Saneamiento,Seguro,0
+Reference3,D_Bolivar,JMP Saneamiento,Basico,46.1538462
+Reference3,D_Bolivar,JMP Saneamiento,Limitado,0
+Reference3,D_Bolivar,JMP Saneamiento,No mejorado,0
+Reference3,D_Bolivar,JMP Saneamiento,Campo abierto,53.8461538
+Reference3,D_Bolivar,JMP Higiene,Basico,69.2307692
+Reference3,D_Bolivar,JMP Higiene,Limitado,23.0769231
+Reference3,D_Bolivar,JMP Higiene,Sin instalacion,0
+Reference3,D_Bolivar,JMP Higiene_seco,Basico,69.2307692
+Reference3,D_Bolivar,JMP Higiene_seco,Limitado,23.0769231
+Reference3,D_Bolivar,JMP Higiene_seco,Sin instalacion,0
+Reference3,D_Bolivar,Carga contaminante al ambiente,,5.555692308
+Reference3,D_Charahota,JMP Agua,Seguro,31.25
+Reference3,D_Charahota,JMP Agua,Basico,50
+Reference3,D_Charahota,JMP Agua,Limitado,6.25
+Reference3,D_Charahota,JMP Agua,No mejorado,0
+Reference3,D_Charahota,JMP Agua,Agua superficial,12.5
+Reference3,D_Charahota,JMP Agua_seco,Seguro,31.25
+Reference3,D_Charahota,JMP Agua_seco,Basico,50
+Reference3,D_Charahota,JMP Agua_seco,Limitado,6.25
+Reference3,D_Charahota,JMP Agua_seco,No mejorado,0
+Reference3,D_Charahota,JMP Agua_seco,Agua superficial,12.5
+Reference3,D_Charahota,JMP Saneamiento,Seguro,12.5
+Reference3,D_Charahota,JMP Saneamiento,Basico,25
+Reference3,D_Charahota,JMP Saneamiento,Limitado,0
+Reference3,D_Charahota,JMP Saneamiento,No mejorado,0
+Reference3,D_Charahota,JMP Saneamiento,Campo abierto,62.5
+Reference3,D_Charahota,JMP Higiene,Basico,62.5
+Reference3,D_Charahota,JMP Higiene,Limitado,31.25
+Reference3,D_Charahota,JMP Higiene,Sin instalacion,6.25
+Reference3,D_Charahota,JMP Higiene_seco,Basico,62.5
+Reference3,D_Charahota,JMP Higiene_seco,Limitado,31.25
+Reference3,D_Charahota,JMP Higiene_seco,Sin instalacion,6.25
+Reference3,D_Charahota,Carga contaminante al ambiente,,4.487744681
+Reference3,D_Chillco1,JMP Agua,Seguro,18.1818182
+Reference3,D_Chillco1,JMP Agua,Basico,81.8181818
+Reference3,D_Chillco1,JMP Agua,Limitado,0
+Reference3,D_Chillco1,JMP Agua,No mejorado,0
+Reference3,D_Chillco1,JMP Agua,Agua superficial,0
+Reference3,D_Chillco1,JMP Agua_seco,Seguro,18.1818182
+Reference3,D_Chillco1,JMP Agua_seco,Basico,81.8181818
+Reference3,D_Chillco1,JMP Agua_seco,Limitado,0
+Reference3,D_Chillco1,JMP Agua_seco,No mejorado,0
+Reference3,D_Chillco1,JMP Agua_seco,Agua superficial,0
+Reference3,D_Chillco1,JMP Saneamiento,Seguro,0
+Reference3,D_Chillco1,JMP Saneamiento,Basico,36.3636364
+Reference3,D_Chillco1,JMP Saneamiento,Limitado,22.7272727
+Reference3,D_Chillco1,JMP Saneamiento,No mejorado,0
+Reference3,D_Chillco1,JMP Saneamiento,Campo abierto,40.9090909
+Reference3,D_Chillco1,JMP Higiene,Basico,72.7272727
+Reference3,D_Chillco1,JMP Higiene,Limitado,9.0909091
+Reference3,D_Chillco1,JMP Higiene,Sin instalacion,4.5454545
+Reference3,D_Chillco1,JMP Higiene_seco,Basico,72.7272727
+Reference3,D_Chillco1,JMP Higiene_seco,Limitado,9.0909091
+Reference3,D_Chillco1,JMP Higiene_seco,Sin instalacion,4.5454545
+Reference3,D_Chillco1,Carga contaminante al ambiente,,2.86488595
+Reference3,D_Oploca,JMP Agua,Seguro,0
+Reference3,D_Oploca,JMP Agua,Basico,0
+Reference3,D_Oploca,JMP Agua,Limitado,0
+Reference3,D_Oploca,JMP Agua,No mejorado,50
+Reference3,D_Oploca,JMP Agua,Agua superficial,50
+Reference3,D_Oploca,JMP Agua_seco,Seguro,0
+Reference3,D_Oploca,JMP Agua_seco,Basico,0
+Reference3,D_Oploca,JMP Agua_seco,Limitado,0
+Reference3,D_Oploca,JMP Agua_seco,No mejorado,50
+Reference3,D_Oploca,JMP Agua_seco,Agua superficial,50
+Reference3,D_Oploca,JMP Saneamiento,Seguro,0
+Reference3,D_Oploca,JMP Saneamiento,Basico,0
+Reference3,D_Oploca,JMP Saneamiento,Limitado,0
+Reference3,D_Oploca,JMP Saneamiento,No mejorado,0
+Reference3,D_Oploca,JMP Saneamiento,Campo abierto,100
+Reference3,D_Oploca,JMP Higiene,Basico,50
+Reference3,D_Oploca,JMP Higiene,Limitado,25
+Reference3,D_Oploca,JMP Higiene,Sin instalacion,25
+Reference3,D_Oploca,JMP Higiene_seco,Basico,50
+Reference3,D_Oploca,JMP Higiene_seco,Limitado,25
+Reference3,D_Oploca,JMP Higiene_seco,Sin instalacion,25
+Reference3,D_Oploca,Carga contaminante al ambiente,,1.8088
+Reference3,D_PalalaAlta,JMP Agua,Seguro,0
+Reference3,D_PalalaAlta,JMP Agua,Basico,60
+Reference3,D_PalalaAlta,JMP Agua,Limitado,20
+Reference3,D_PalalaAlta,JMP Agua,No mejorado,20
+Reference3,D_PalalaAlta,JMP Agua,Agua superficial,0
+Reference3,D_PalalaAlta,JMP Agua_seco,Seguro,0
+Reference3,D_PalalaAlta,JMP Agua_seco,Basico,60
+Reference3,D_PalalaAlta,JMP Agua_seco,Limitado,20
+Reference3,D_PalalaAlta,JMP Agua_seco,No mejorado,20
+Reference3,D_PalalaAlta,JMP Agua_seco,Agua superficial,0
+Reference3,D_PalalaAlta,JMP Saneamiento,Seguro,0
+Reference3,D_PalalaAlta,JMP Saneamiento,Basico,20
+Reference3,D_PalalaAlta,JMP Saneamiento,Limitado,0
+Reference3,D_PalalaAlta,JMP Saneamiento,No mejorado,0
+Reference3,D_PalalaAlta,JMP Saneamiento,Campo abierto,80
+Reference3,D_PalalaAlta,JMP Higiene,Basico,80
+Reference3,D_PalalaAlta,JMP Higiene,Limitado,20
+Reference3,D_PalalaAlta,JMP Higiene,Sin instalacion,0
+Reference3,D_PalalaAlta,JMP Higiene_seco,Basico,80
+Reference3,D_PalalaAlta,JMP Higiene_seco,Limitado,20
+Reference3,D_PalalaAlta,JMP Higiene_seco,Sin instalacion,0
+Reference3,D_PalalaAlta,Carga contaminante al ambiente,,4.424
+Reference3,D_Tupiza,JMP Agua,Seguro,0
+Reference3,D_Tupiza,JMP Agua,Basico,0
+Reference3,D_Tupiza,JMP Agua,Limitado,0
+Reference3,D_Tupiza,JMP Agua,No mejorado,16.6666667
+Reference3,D_Tupiza,JMP Agua,Agua superficial,83.3333333
+Reference3,D_Tupiza,JMP Agua_seco,Seguro,0
+Reference3,D_Tupiza,JMP Agua_seco,Basico,0
+Reference3,D_Tupiza,JMP Agua_seco,Limitado,0
+Reference3,D_Tupiza,JMP Agua_seco,No mejorado,16.6666667
+Reference3,D_Tupiza,JMP Agua_seco,Agua superficial,83.3333333
+Reference3,D_Tupiza,JMP Saneamiento,Seguro,0
+Reference3,D_Tupiza,JMP Saneamiento,Basico,0
+Reference3,D_Tupiza,JMP Saneamiento,Limitado,0
+Reference3,D_Tupiza,JMP Saneamiento,No mejorado,16.6666667
+Reference3,D_Tupiza,JMP Saneamiento,Campo abierto,83.3333333
+Reference3,D_Tupiza,JMP Higiene,Basico,0
+Reference3,D_Tupiza,JMP Higiene,Limitado,100
+Reference3,D_Tupiza,JMP Higiene,Sin instalacion,0
+Reference3,D_Tupiza,JMP Higiene_seco,Basico,0
+Reference3,D_Tupiza,JMP Higiene_seco,Limitado,100
+Reference3,D_Tupiza,JMP Higiene_seco,Sin instalacion,0
+Reference3,D_Tupiza,Carga contaminante al ambiente,,15.95733333
+Reference3,D_LaTorre,JMP Agua,Seguro,78.5714286
+Reference3,D_LaTorre,JMP Agua,Basico,21.4285714
+Reference3,D_LaTorre,JMP Agua,Limitado,0
+Reference3,D_LaTorre,JMP Agua,No mejorado,0
+Reference3,D_LaTorre,JMP Agua,Agua superficial,0
+Reference3,D_LaTorre,JMP Agua_seco,Seguro,78.5714286
+Reference3,D_LaTorre,JMP Agua_seco,Basico,21.4285714
+Reference3,D_LaTorre,JMP Agua_seco,Limitado,0
+Reference3,D_LaTorre,JMP Agua_seco,No mejorado,0
+Reference3,D_LaTorre,JMP Agua_seco,Agua superficial,0
+Reference3,D_LaTorre,JMP Saneamiento,Seguro,0
+Reference3,D_LaTorre,JMP Saneamiento,Basico,7.1428571
+Reference3,D_LaTorre,JMP Saneamiento,Limitado,0
+Reference3,D_LaTorre,JMP Saneamiento,No mejorado,0
+Reference3,D_LaTorre,JMP Saneamiento,Campo abierto,92.8571429
+Reference3,D_LaTorre,JMP Higiene,Basico,100
+Reference3,D_LaTorre,JMP Higiene,Limitado,0
+Reference3,D_LaTorre,JMP Higiene,Sin instalacion,0
+Reference3,D_LaTorre,JMP Higiene_seco,Basico,100
+Reference3,D_LaTorre,JMP Higiene_seco,Limitado,0
+Reference3,D_LaTorre,JMP Higiene_seco,Sin instalacion,0
+Reference3,D_LaTorre,Carga contaminante al ambiente,,8.203031806
+Reference3,D_Monterico,JMP Agua,Seguro,83.3333333
+Reference3,D_Monterico,JMP Agua,Basico,16.6666667
+Reference3,D_Monterico,JMP Agua,Limitado,0
+Reference3,D_Monterico,JMP Agua,No mejorado,0
+Reference3,D_Monterico,JMP Agua,Agua superficial,0
+Reference3,D_Monterico,JMP Agua_seco,Seguro,83.3333333
+Reference3,D_Monterico,JMP Agua_seco,Basico,16.6666667
+Reference3,D_Monterico,JMP Agua_seco,Limitado,0
+Reference3,D_Monterico,JMP Agua_seco,No mejorado,0
+Reference3,D_Monterico,JMP Agua_seco,Agua superficial,0
+Reference3,D_Monterico,JMP Saneamiento,Seguro,8.3333333
+Reference3,D_Monterico,JMP Saneamiento,Basico,0
+Reference3,D_Monterico,JMP Saneamiento,Limitado,0
+Reference3,D_Monterico,JMP Saneamiento,No mejorado,0
+Reference3,D_Monterico,JMP Saneamiento,Campo abierto,91.6666667
+Reference3,D_Monterico,JMP Higiene,Basico,66.6666667
+Reference3,D_Monterico,JMP Higiene,Limitado,8.3333333
+Reference3,D_Monterico,JMP Higiene,Sin instalacion,16.6666667
+Reference3,D_Monterico,JMP Higiene_seco,Basico,66.6666667
+Reference3,D_Monterico,JMP Higiene_seco,Limitado,8.3333333
+Reference3,D_Monterico,JMP Higiene_seco,Sin instalacion,16.6666667
+Reference3,D_Monterico,Carga contaminante al ambiente,,7.531113333
