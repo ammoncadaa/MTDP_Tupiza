@@ -38,7 +38,7 @@ library(tidyr)
 library(shinyhelper)
 library(htmltools)
 
-setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+#setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 #datos
 ######################################
 ######################################
@@ -49,12 +49,26 @@ a1=c("Reference", "Reference1", "Reference2", "Reference3")
 a2=c("Pob 2021 Clima Hist","Pob 2022 Clima Hist","Pob 2021 Clima CC", "Pob 2022 Clima CC")
 #a2=c("Pob 2021 Clima Hist","Pob 2022 Clima Cambio Climatico","Pob 2021 Clima Cambio Climatico", "Pob 2022 Clima Cambio Climatico")
 
+#WASHfiles="Estrategias/Indicadores/WASH/"
+#REVAMPfiles="Estrategias/Indicadores/REVAMP/"
+#WaTTfiles="Estrategias/Indicadores/WaTT/"
+#ScriptIndicadoresFiles=""
+#FolderAcciones="Estrategias/Acciones/"
+#FolderInventario="Estrategias/"
+
+WASHfiles=""
+REVAMPfiles=""
+WaTTfiles=""
+ScriptIndicadoresFiles=""
+FolderAcciones=""
+FolderInventario=""
+
 #InvAcciones = read.csv(paste0("Inventario de acciones.csv"), check.names = F, stringsAsFactors = F,header = T, encoding="UTF-8-BOM")
 #colnames(InvAcciones)[1] = gsub('^...','',colnames(InvAcciones)[1])
 #InvIndicadores = read.csv(paste0("Inventario de indicadores.csv"), check.names = F, stringsAsFactors = F,header = T, encoding="UTF-8-BOM")
 #colnames(InvIndicadores)[1] = gsub('^...','',colnames(InvIndicadores)[1])
-InvAcciones = read.csv(paste0("Inventario de acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
-InvIndicadores = read.csv(paste0("Inventario de indicadores.csv"), check.names = F, stringsAsFactors = F,header = T)
+InvAcciones = read.csv(paste0(FolderInventario,"Inventario de acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
+InvIndicadores = read.csv(paste0(FolderInventario,"Inventario de indicadores.csv"), check.names = F, stringsAsFactors = F,header = T)
 
 ######################################
 ######################################
@@ -76,14 +90,14 @@ compuesto=subset(InvIndicadores,InvIndicadores$Visualizacion_Compuesta!="NO")[,c
 
 
 #reiniciar MTDP 
-#fn = c("Estrategia_cuenca.csv","Estrategia_cuenca.txt","Lista acciones.csv")
+#fn = paste0(FolderAcciones,c("Estrategia_cuenca.csv","Estrategia_cuenca.txt","Lista acciones.csv"))
 #for (i in 1:length(fn)) {if (file.exists(fn[i])) {file.remove(fn[i])}}
 
 acciones=data.frame(matrix(NA,1,nrow(data)+1))
 colnames(acciones)=c("N_Corrida",data$`Accion`)
 acciones[1,]=colnames(acciones)
-#if (file.exists(paste0("Lista acciones.csv"))==FALSE) {
-#  write.table(na.exclude(acciones),paste0("Lista acciones.csv"),row.names=F, col.names=T ,sep=",")
+#if (file.exists(paste0(FolderAcciones,"Lista acciones.csv"))==FALSE) {
+#  write.table(na.exclude(acciones),paste0(FolderAcciones,"Lista acciones.csv"),row.names=F, col.names=T ,sep=",")
 #}
 
 runsScript=unique(substring(list.files(pattern = "_Indicadores.csv$"), 1,1))
@@ -341,7 +355,7 @@ ui = dashboardPage(
                                                                      uiOutput(paste0("umbral_criticoIn",TabsIndicadores1[j],"_",TabsIndicadores[i]))
                                                                                                                                    )
                                                             ),
-                                                            verbatimTextOutput(paste0("summary",TabsIndicadores1[j],"_",TabsIndicadores[i])),
+                                                            
                                                             fluidRow(
                                                               column(3,
                                                                      strong(htmlOutput((paste0("textU01",TabsIndicadores1[j],"_",TabsIndicadores[i])))),
@@ -381,6 +395,7 @@ ui = dashboardPage(
                                                               )
                                                             ),
                                                             plotlyOutput(paste0("grafico",TabsIndicadores1[j],"_",TabsIndicadores[i])), #,width='100%'
+                                                            verbatimTextOutput(paste0("summary",TabsIndicadores1[j],"_",TabsIndicadores[i])),
                                                             plotlyOutput(paste0("graficoWaTT",TabsIndicadores1[j],"_",TabsIndicadores[i])), #,width='100%'
                                                             br(),
                                                             div(DT::dataTableOutput(paste0("tabla",TabsIndicadores1[j],"_",TabsIndicadores[i])), style = "font-size: 100%; width: 100%")
@@ -588,7 +603,7 @@ server = function(input, output, session) {
     for (i in seq(data$Categoria)) {
       data.sel$Opcion[i] = as.character(input[[paste0("D",as.character(i),"_Out")]])
     }
-    #write.csv(data.sel,paste0("Estrategia_cuenca1.csv"),row.names=F)
+    #write.csv(data.sel,paste0(FolderAcciones,"data.sel.csv"),row.names=F)
     data.sel
   })
   
@@ -624,7 +639,7 @@ server = function(input, output, session) {
       
       start = Sys.time()
       
-      acciones= read.csv(paste0("Lista acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
+      acciones= read.csv(paste0(FolderAcciones,"Lista acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
       #colnames(acciones)[1] = gsub('^...','',colnames(acciones)[1])
       data.sel=data.sel()
       row=t(data.frame(c(nrow(acciones)+1,data.sel$Opcion)))
@@ -654,7 +669,7 @@ server = function(input, output, session) {
       } else {
         
         acciones=rbind(acciones,row)
-        #write.table(na.exclude(acciones),paste0("Lista acciones.csv"),row.names=F, col.names=T ,sep=",")
+        #write.table(na.exclude(acciones),paste0(FolderAcciones,"Lista acciones.csv"),row.names=F, col.names=T ,sep=",")
         
         key=data.sel[,c("Categoria","N","Key assumption",	"Opcion")]
         key$`Key assumptionOpcionCategoria`=paste0(as.character(key$`Key assumption`),as.character(key$Opcion),as.character(key$Categoria))
@@ -668,8 +683,8 @@ server = function(input, output, session) {
         rownames(row)=NULL
         key=rbind(row,key)
         
-        #write.csv(na.exclude(key),paste0("Estrategia_cuenca.csv"),row.names=F)
-        #write.table(na.exclude(key), file = paste0("Estrategia_cuenca.txt"), sep = "\t",row.names = FALSE,quote=FALSE)
+        #write.csv(na.exclude(key),paste0(FolderAcciones,"Estrategia_cuenca.csv"),row.names=F)
+        #write.table(na.exclude(key), file = paste0(FolderAcciones,"Estrategia_cuenca.txt"), sep = "\t",row.names = FALSE,quote=FALSE)
         
         output[[paste0("Text_Arun",TabsAcciones[length(TabsAcciones)])]] = renderText({ 
           outTxt = ""
@@ -716,7 +731,7 @@ server = function(input, output, session) {
   ##################################
   
   acciones=reactive({
-    acciones=read.csv(paste0("Lista acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
+    acciones=read.csv(paste0(FolderAcciones,"Lista acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
     #colnames(acciones)[1] = gsub('^...','',colnames(acciones)[1])
     acciones
   })
@@ -753,7 +768,7 @@ server = function(input, output, session) {
         #j=1
         TI=TabsIndicadores[i]
         TI1=TabsIndicadores1[j]
-        #var="Poblacion" #_CoberturaPor_Media" # "JMP Agua_seco" #  "Flujo de retorno-Media" #Poblacion_CoberturaPor_Media" #JMP Agua_seco" #"Mineria" #  #"Carga contaminante al ambiente" #"Poblacion_CoberturaPor_Media" #"Poblacion_DemandaInsatisfecha-Media" "Poblacion" "Irrigacion_AreaRiego" "Area_" "Caudal-Media"
+        #var="Caudal-Media" #"Area de estudio" #Area_" #"Poblacion_CoberturaPor_Media-AnioSequia" # "Poblacion" #_CoberturaPor_Media" # "JMP Agua_seco" #  "Flujo de retorno-Media" #Poblacion_CoberturaPor_Media" #JMP Agua_seco" #"Mineria" #  #"Carga contaminante al ambiente" #"Poblacion_CoberturaPor_Media" #"Poblacion_DemandaInsatisfecha-Media" "Poblacion" "Irrigacion_AreaRiego" "Area_" "Caudal-Media"
         #Nrun=1
         var=input[[paste0("out_",TI,"_",TI1)]]
         Nrun= input$Nrun
@@ -764,7 +779,7 @@ server = function(input, output, session) {
         if (isTRUE(DatosVar$Fuente_Informacion == "Script Indicadores")){
             file=NULL
             for (k in 1:length(a1)){
-              f1=read.csv(paste0(Nrun,"_",a1[k],"_Indicadores.csv"), check.names = F, stringsAsFactors = F,header = T)
+              f1=read.csv(paste0(ScriptIndicadoresFiles,Nrun,"_",a1[k],"_Indicadores.csv"), check.names = F, stringsAsFactors = F,header = T)
               #colnames(f1)[1] = gsub('^...','',colnames(f1)[1])
               f1$Nrun=k
               f1$Escenario=a2[k]
@@ -805,7 +820,7 @@ server = function(input, output, session) {
             
         } else if (isTRUE(DatosVar$Fuente_Informacion == "WASH Flows")) {
           
-            file=read.csv(paste0(Nrun,"_WASHtest.csv"), check.names = F, stringsAsFactors = F,header = T)
+            file=read.csv(paste0(WASHfiles,Nrun,"_WASHtest.csv"), check.names = F, stringsAsFactors = F,header = T)
             #colnames(file)[1] = gsub('^...','',colnames(file)[1])
             file$Nrun=NA
             file$Escenario=NA
@@ -992,7 +1007,9 @@ server = function(input, output, session) {
 
         output[[paste0("grafico",TI1,"_",TI)]]= renderPlotly({
           
-            #var="ExtraccionTransmision-Media" #"JMP Agua" #JMP Agua" #"Irrigacion_AreaRiego"  #"Carga contaminante al ambiente" # #"JMP Agua" #"Irrigacion_AreaRiego" #"Poblacion" #"Poblacion_CoberturaPor_Media" #  #"Poblacion_CoberturaPor_Media" #"Poblacion_DemandaInsatisfecha-Media" "Poblacion" "Irrigacion_AreaRiego" "Area_" "Caudal-Media"
+            
+          if (isTRUE(is.element(input[[paste0("out_",TI,"_",TI1)]],grafico))) {
+          #var="ExtraccionTransmision-Media" #"JMP Agua" #JMP Agua" #"Irrigacion_AreaRiego"  #"Carga contaminante al ambiente" # #"JMP Agua" #"Irrigacion_AreaRiego" #"Poblacion" #"Poblacion_CoberturaPor_Media" #  #"Poblacion_CoberturaPor_Media" #"Poblacion_DemandaInsatisfecha-Media" "Poblacion" "Irrigacion_AreaRiego" "Area_" "Caudal-Media"
             
             #Nrun=1
             
@@ -1607,14 +1624,47 @@ server = function(input, output, session) {
                 shinyjs::hide(paste0("grafico",TI1,"_",TI))
                 shinyjs::hide(paste0("graficolog",TI1,"_",TI))
                 shinyjs::hide(paste0("summary",TI1,"_",TI))
+                
             }
             
+          } else {
+            shinyjs::hide(paste0("grafico",TI1,"_",TI))
+            shinyjs::hide(paste0("graficolog",TI1,"_",TI))
+            shinyjs::hide(paste0("summary",TI1,"_",TI))
+            shinyjs::hide(paste0("textU01",TI1,"_",TI))
+            shinyjs::hide(paste0("textU11",TI1,"_",TI))
+            shinyjs::hide(paste0("textU11_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU21",TI1,"_",TI))
+            shinyjs::hide(paste0("textU21_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU31",TI1,"_",TI))
+            shinyjs::hide(paste0("textU31_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU02",TI1,"_",TI))
+            shinyjs::hide(paste0("textU12",TI1,"_",TI))
+            shinyjs::hide(paste0("textU12_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU22",TI1,"_",TI))
+            shinyjs::hide(paste0("textU22_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU32",TI1,"_",TI))
+            shinyjs::hide(paste0("textU32_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU03",TI1,"_",TI))
+            shinyjs::hide(paste0("textU13",TI1,"_",TI))
+            shinyjs::hide(paste0("textU13_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU23",TI1,"_",TI))
+            shinyjs::hide(paste0("textU23_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU33",TI1,"_",TI))
+            shinyjs::hide(paste0("textU33_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU04",TI1,"_",TI))
+            shinyjs::hide(paste0("textU14",TI1,"_",TI))
+            shinyjs::hide(paste0("textU14_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU24",TI1,"_",TI))
+            shinyjs::hide(paste0("textU24_1",TI1,"_",TI))
+            shinyjs::hide(paste0("textU34",TI1,"_",TI))
+            shinyjs::hide(paste0("textU34_1",TI1,"_",TI))
+          } 
             
           
         })
         
         output[[paste0("mapa_shapes1",TI1,"_",TI)]] <- renderLeaflet({
-          
           
           if (!isTRUE(is.element(var,mapa))) {
             shinyjs::hide(paste0("mapa_shapes1",TI1,"_",TI))
@@ -1650,7 +1700,7 @@ server = function(input, output, session) {
             shape[[DatosVar$CampoShapeUnion]]=gsub(" \\s*\\([^\\)]+\\)", "",shape[[DatosVar$CampoShapeUnion]])
             shape = merge(shape, file5, by=DatosVar$CampoShapeUnion ,all.x=FALSE)
             
-            if (st_geometry_type(shape, by_geometry = FALSE)[1]=="MULTIPOLYGON"| st_geometry_type(shape, by_geometry = FALSE)[1]=="POLYGON" | st_geometry_type(shape, by_geometry = FALSE)[1]=="POINT" && (DatosVar$Shape_Michart=="BARRAS")){
+            if (DatosVar$Shape_Michart=="BARRAS"){
               
               pal=colorNumeric(DatosVar$Shape_ColoresMinichart, domain = NULL)
               #pal=colorNumeric("Greens", domain = NULL)
@@ -1689,33 +1739,38 @@ server = function(input, output, session) {
                   #width = 60 * sqrt(d$value) / sqrt(max(d$value))
                 )
               
-            } else if (st_geometry_type(shape, by_geometry = FALSE)[1]=="MULTIPOLYGON"| st_geometry_type(shape, by_geometry = FALSE)[1]=="POLYGON" | st_geometry_type(shape, by_geometry = FALSE)[1]=="POINT" && (DatosVar$Shape_Michart=="PUNTOS")){
+            } else if (DatosVar$Shape_Michart=="PUNTOS"){
               
               pal <- colorNumeric(palette = unlist(strsplit(DatosVar$Colores,",")),domain = NULL)
               
-              coords=data.frame(as.vector(shape[[DatosVar$CampoShapeUnion]]),as.vector(st_coordinates(st_centroid(st_geometry(shape)))[,"X"]),as.vector(st_coordinates(st_centroid(st_geometry(shape)))[,"Y"]))
-              colnames(coords)=c(DatosVar$ColumnaInformacion,"X","Y")
-              Coordenadas=NULL
-              Coordenadas=as.data.frame(unique(file3[,DatosVar$ColumnaInformacion]))
-              colnames(Coordenadas)=DatosVar$ColumnaInformacion
-              Coordenadas=merge(Coordenadas,coords, by=DatosVar$ColumnaInformacion,all.x=FALSE)
-              Coordenadas=merge(Coordenadas,file3, by=DatosVar$ColumnaInformacion)
-              Coordenadas$color=pal(Coordenadas$Value)
-              Coordenadas$tam=60 * sqrt(Coordenadas$Value) / sqrt(max(Coordenadas$Value))
-              Coordenadas$Escenario=factor(Coordenadas$Escenario,levels=a2)
+              shape1 =sf::read_sf(dsn=paste0(DatosVar$Shape_Visualizacion))
+              shape1=st_zm(shape1, drop = T, what = "ZM")
+              colnames(file3)[which(colnames(file3)==DatosVar$ColumnaInformacion)]=DatosVar$CampoShapeUnion
+              shape1[[DatosVar$CampoShapeUnion]]=gsub(" \\s*\\([^\\)]+\\)", "",shape1[[DatosVar$CampoShapeUnion]])
+              #is.element(unique(file3$Name), shape1$Name)
+              shape1 = merge(shape1, file3, by=DatosVar$CampoShapeUnion ,all.y=TRUE)
+              shape1$color=pal(shape1$Value)
+              shape1$tam=60 * sqrt(shape1$Value) / sqrt(max(shape1$Value))
+              shape1$Escenario=factor(shape1$Escenario,levels=a2)
               #Coordenadas = Coordenadas[Coordenadas$Name=="D_Tupiza",]
-              Coordenadas = Coordenadas[order(Coordenadas$Escenario),]
+              shape1 = shape1[order(shape1$Escenario),]
+              shape1$X=st_coordinates(st_centroid(st_geometry(shape1)))[,"X"]
+              shape1$Y=st_coordinates(st_centroid(st_geometry(shape1)))[,"Y"]
+              Coordenadas=shape1 %>%
+                st_drop_geometry() %>%
+                mutate(id=as.character(row_number()))
+              str(Coordenadas)
               
               map = map %>%
                 #basemap %>%
                 addMinicharts(
-                  Coordenadas$X, Coordenadas$Y,
-                  chartdata = Coordenadas$Value,
+                  as.data.frame(shape1["X"])[,"X"], as.data.frame(shape1["Y"])[,"Y"],
+                  chartdata = as.data.frame(shape1["Value"])[,"Value"],
                   showLabels = TRUE,
                   #fillColor = Coordenadas$color ,
                   #colorPalette = Coordenadas$color ,
-                  layerId = Coordenadas$NameDef,
-                  time = Coordenadas$Escenario,
+                  layerId = as.data.frame(shape1["NameDef"])[,"NameDef"],
+                  time = as.data.frame(shape1["Escenario"])[,"Escenario"], #Coordenadas$Escenario,
                   #width = Coordenadas$tam,
                   #height = Coordenadas$tam
                   #popup=popupArgs(
@@ -1758,11 +1813,11 @@ server = function(input, output, session) {
               #})
               
               labs <- lapply(seq(nrow(shape)), function(j) {
-                paste0( 'Escenario ',a2[i], '<p></p>',
-                        'Variable : ',DatosVar$Nombre, '<p></p>', 
-                        'Elemento : ', shape[[DatosVar$CampoShapeUnion]][j], '<p></p>', 
+                paste0( 'Escenario: ',a2[i], '<p></p>',
+                        'Variable: ',DatosVar$Nombre, '<p></p>', 
+                        'Elemento: ', shape[[DatosVar$CampoShapeUnion]][j], '<p></p>', 
                         'Valor ',DatosVar$Unidad , ': ', shape[[a2[i]]][j], '<p></p>', 
-                        'Tema central : ', DatosVar$Tema_Central,'</p><p>')#,
+                        'Tema central: ', DatosVar$Tema_Central,'</p><p>')#,
                 #'Descripcion : ',DatosVar$Descripcion, '<p></p>')
               })
               
@@ -2146,7 +2201,7 @@ server = function(input, output, session) {
   })
   
   output$TableRun1 = DT::renderDataTable({
-    acciones=read.csv(paste0("Lista acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
+    acciones=read.csv(paste0(FolderAcciones,"Lista acciones.csv"), check.names = F, stringsAsFactors = F,header = T)
     #colnames(acciones)[1] <- gsub('^...','',colnames(acciones)[1])
     
     acciones=subset(acciones,acciones$N_Corrida==input$Nrun1)
@@ -2161,15 +2216,7 @@ server = function(input, output, session) {
     # simulate building
     show_loading(elem = "leafletBusy")
     
-    map = leaflet()%>%
-      addMapPane("principalpuntos", zIndex = 450) %>%
-      addMapPane("principallineas", zIndex = 440) %>% 
-      addMapPane("principalpoligonos", zIndex = 430) %>% 
-      addMapPane("puntos", zIndex = 420) %>% 
-      addMapPane("lineas", zIndex = 410) %>% 
-      addMapPane("poligonos", zIndex = 400) 
-    
-    indicadores=unique(subset(InvIndicadores,InvIndicadores$Visualizacion_Mapa=="SI","Nombre"))
+    indicadores=unique(subset(InvIndicadores,InvIndicadores$Visualizacion_Mapa=="SI" & InvIndicadores$Fuente_Informacion == "Script Indicadores","Nombre"))
     indicadores=as.vector(t(indicadores))
     #indicadores=as.vector(t(indicadores))[c(1,19,5,40)]
     
@@ -2178,7 +2225,7 @@ server = function(input, output, session) {
     #  indicadores = c(indicadores, input[[paste0(unique(InvIndicadores$Tema_Central)[i])]])
     #}
     
-    InvIndicadores1=subset(InvIndicadores,InvIndicadores$Visualizacion_Mapa=="SI")
+    InvIndicadores1=subset(InvIndicadores,InvIndicadores$Visualizacion_Mapa=="SI" & InvIndicadores$Fuente_Informacion == "Script Indicadores")
     temas=unique(as.vector(InvIndicadores1$Tema_Central))
     InvIndicadores1$N=NA
     for (i in 1:length(temas)){
@@ -2200,6 +2247,15 @@ server = function(input, output, session) {
     shapesContexto=shapes$shapesContexto
     NshapesContexto=shapes$NshapesContexto
     CshapesContexto=shapes$CshapesContexto
+    
+    map = leaflet()%>%
+      addMapPane("principalpuntos", zIndex = 450) %>%
+      addMapPane("principallineas", zIndex = 440) %>% 
+      addMapPane("principalpoligonos", zIndex = 430) %>% 
+      addMapPane("puntos", zIndex = 420) %>% 
+      addMapPane("lineas", zIndex = 410) %>% 
+      addMapPane("poligonos", zIndex = 400) 
+    
     
     for (i in 1:length(NshapesContexto)) {
       shp=read_sf(dsn=paste0(shapesContexto[i]))
@@ -2232,40 +2288,54 @@ server = function(input, output, session) {
     #Nrun=1
     Nrun= input$Nrun1
     
-    if (DatosVar$Fuente_Informacion == "Script Indicadores") {
-      
-      file=NULL
-      for (k in 1:length(a1)){
-        f1=read.csv(paste0(Nrun,"_",a1[k],"_Indicadores.csv"), check.names = F, stringsAsFactors = F,header = T)
-        #colnames(f1)[1] <- gsub('^...','',colnames(f1)[1])
-        f1$Nrun=k
-        f1$Escenario=a2[k]
-        file=rbind(file,f1)
-      }
-       
-    } else if (DatosVar$Fuente_Informacion == "WASH Flows") {
-      file=read.csv(paste0(Nrun,"_WASHtest.csv"), check.names = F, stringsAsFactors = F,header = T)
-      #colnames(file)[1] <- gsub('^...','',colnames(file)[1])
-      file$Nrun=NA
-      file$Escenario=NA
-      for (k in 1:length(a1)){
-        file[file$WEAPEscenario==a1[k],"Nrun"]=k
-        file[file$WEAPEscenario==a1[k],"Escenario"]=a2[k]
-      }
+    file=NULL
+    for (k in 1:length(a1)){
+      f1=read.csv(paste0(Nrun,"_",a1[k],"_Indicadores.csv"), check.names = F, stringsAsFactors = F,header = T)
+      #colnames(f1)[1] = gsub('^...','',colnames(f1)[1])
+      f1$Nrun=k
+      f1$Escenario=a2[k]
+      file=rbind(file,f1)
     }
+    
+    remove(f1)
     
     fileT = file 
     #py=unique(fileT$Escenario)[1]
     py=input$yearpop1
     fileT=subset(fileT,fileT$Escenario==py)
     #z=1
+    
     for (z in 1:length(indicadores)) {
       #var="Poblacion_DemandaInsatisfecha-Media" #"ExtraccionTransmision-Media"   #"ExtraccionDiversion-Media" # "Flujo de retorno-Media" #"Poblacion_DemandaInsatisfecha-Media" #"Poblacion" #"Irrigacion_AreaRiego" #Area_" #"Caudal-Media"  #"Poblacion" 
       var=indicadores[z]
       #is.element(var,mapa)==TRUE
-      
       DatosVar=subset(InvIndicadores,InvIndicadores$Nombre==var)
       
+      file=subset(fileT,fileT$Prefix==var)
+      file$NameDef=gsub(paste0("^",gsub("\\\\", "-", DatosVar$LimpiarNombre)),"",gsub("\\\\", "-",file[,DatosVar$ColumnaInformacion]))
+      
+      file2=subset(file,file$Prefix==var & file$Escenario==py, c("NameDef", "Value"))
+      file2=unique(as.vector(file2[order(file2$Value, decreasing = TRUE),"NameDef"]))
+      #file[,DatosVar$ColumnaInformacion] = factor(file[,DatosVar$ColumnaInformacion], labels=file2, levels = unique(file[,DatosVar$ColumnaInformacion]))
+      file$NameDef = factor(file$NameDef, levels = file2)
+      if (!is.na(DatosVar$RedondearDecimales)){
+        file$Value=round(file$Value,DatosVar$RedondearDecimales)
+      }
+      remove(file2)
+        
+      #str(file)
+        
+      if (!is.na(DatosVar$RedondearDecimales)){
+        file$Value=round(file$Value,DatosVar$RedondearDecimales)
+      }
+        
+      file3=file
+        
+      file5=file[,c(DatosVar$ColumnaInformacion,"Value", "Escenario", "NameDef")]
+      file5 = file5 %>% pivot_wider(names_from ="Escenario" , values_from = "Value")
+      file5=as.data.frame(file5)
+      #str(file)
+
       shape = read_sf(dsn=paste0(DatosVar$Shape_Visualizacion),stringsAsFactors = FALSE)
       # shape = readOGR(dsn=paste0(DatosVar$Shape_Visualizacion))
       #tabla=as.data.frame(shape)
@@ -2274,11 +2344,7 @@ server = function(input, output, session) {
       #class(shape)[1]
       #tabla=as.data.frame(shape)
       
-      file=subset(fileT,fileT$Prefix==var)
-      if (!is.na(DatosVar$RedondearDecimales)){
-        file$Value=round(file$Value,DatosVar$RedondearDecimales)
-      }
-      colnames(file)[which(colnames(file)==DatosVar$ColumnaInformacion)]=DatosVar$CampoShapeUnion
+      colnames(file5)[which(colnames(file5)==DatosVar$ColumnaInformacion)]=DatosVar$CampoShapeUnion
       #sort(file[,DatosVar$CampoShapeUnion])
       #sort(shape@data[,DatosVar$CampoShapeUnion])
       #is.element(sort(shape@data[,DatosVar$CampoShapeUnion]),sort(shape@data[,DatosVar$CampoShapeUnion]))
@@ -2287,7 +2353,7 @@ server = function(input, output, session) {
       #sort(shape@data[,DatosVar$CampoShapeUnion])
       #is.element(sort(file[,DatosVar$CampoShapeUnion]),sort(shape@data[,DatosVar$CampoShapeUnion]))
       
-      shape = merge(shape, file, by=DatosVar$CampoShapeUnion,all.x=FALSE)
+      shape = merge(shape, file5, by=DatosVar$CampoShapeUnion ,all.x=FALSE)
       #tabla=as.data.frame(shape)
       #tabla
       #head(shape@data)
@@ -2306,13 +2372,18 @@ server = function(input, output, session) {
       #  #'Descripcion : ',DatosVar$Descripcion, '<p></p>')
       #})
       
-      labs <- lapply(seq(nrow(shape)), function(i) {
-        paste0( 'Variable : ',DatosVar$Nombre, '<p></p>', 
-                'Elemento : ', shape[[DatosVar$CampoShapeUnion]][i], '<p></p>', 
-                'Valor ',DatosVar$Unidad , ': ', shape[["Value"]][i], '<p></p>', 
-                'Tema central : ', DatosVar$Tema_Central,'</p><p>')#,
+      labs <- lapply(seq(nrow(shape)), function(j) {
+        paste0( 'Escenario: ',py, '<p></p>',
+                'Variable: ',DatosVar$Nombre, '<p></p>', 
+                'Elemento: ', shape[["NameDef"]][j], '<p></p>', 
+                'Valor ',DatosVar$Unidad , ': ', shape[[py]][j], '<p></p>', 
+                'Tema central: ', DatosVar$Tema_Central,'</p><p>')#,
         #'Descripcion : ',DatosVar$Descripcion, '<p></p>')
       })
+      
+      Textlegend=paste0(DatosVar$Nombre," ",DatosVar$Unidad,'<p></p>',
+                        "Esc: ",py,'<p></p>')#,
+      
       
       #names(providers)
       #"SpatialPolygonsDataFrame" "SpatialPointsDataFrame"  "SpatialLinesDataFrame" 
@@ -2324,7 +2395,7 @@ server = function(input, output, session) {
           addPolygons(data=shape, stroke = TRUE, smoothFactor = 0.2, fillOpacity = 1,
                       color = "grey", opacity = 1, weight = 0.2,dashArray = "1",
                       #fillColor = ~pal(shape@data$Value),
-                      fillColor = pal(as.vector(shape[[a2[i]]])) ,
+                      fillColor = pal(as.vector(shape[[py]])) ,
                       highlight = highlightOptions(weight = 1,
                                                    color = "black",
                                                    fillOpacity = 0.3,
@@ -2334,8 +2405,8 @@ server = function(input, output, session) {
                       #group =  sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(paste0(DatosVar$Shape_Visualizacion)))) %>%  
                       group =  Nshape, options = pathOptions(pane = "principalpoligonos") ) %>%  
           #addLegend("bottomrigh", pal = pal, values = ~shape@data$Value, #"topleft"
-          addLegend("bottomrigh", pal = pal, values = shape[["Value"]], #"topleft"
-                    title = paste0(py," ",DatosVar$Nombre," ",DatosVar$Unidad), group = Nshape, opacity = 1 )
+          addLegend("bottomrigh", pal = pal, values = shape[[py]], #"topleft"
+                    title = Textlegend, group = Nshape, opacity = 1 )
         
         #labFormat = labelFormat(prefix = "$"), 
         
@@ -2344,25 +2415,27 @@ server = function(input, output, session) {
         #else if (class(shape)[1]=="SpatialPointsDataFrame") {
         
         #size=round(as.data.frame(Tshape[1]+(Tshape[2]-Tshape[1])/(length(unique(shape@data$Value))-1)*(0:(length(unique(shape@data$Value))-1))),1)
-        size=round(as.data.frame(Tshape[1]+(Tshape[2]-Tshape[1])/(length(unique(shape[["Value"]]))-1)*(0:(length(unique(shape[["Value"]]))-1))),1)
+        size=round(as.data.frame(Tshape[1]+(Tshape[2]-Tshape[1])/(length(unique(shape[[py]]))-1)*(0:(length(unique(shape[[py]]))-1))),1)
         colnames(size)="size"
         if (DatosVar$Critico =="MAX"){
           #size$Value=sort(unique(shape@data$Value))
-          size$Value=sort(unique(shape[["Value"]]))
+          size$Value=sort(unique(shape[[py]]))
         } 
         
         if (DatosVar$Critico =="MIN"){
           #size$Value=sort(unique(shape@data$Value), decreasing = TRUE)
-          size$Value=sort(unique(shape[["Value"]]), decreasing = TRUE)
+          size$Value=sort(unique(shape[[py]]), decreasing = TRUE)
         } 
         
-        shape = merge(shape, size, by="Value",all.x=FALSE)
+        colnames(size)[2]=py
+        
+        shape = merge(shape, size, by=py,all.x=FALSE)
         #tabla=as.data.frame(shape)
         map = map %>%
           addCircles(data=as.data.frame(shape), lng = as.data.frame(st_coordinates(shape))[,"X"], lat = as.data.frame(st_coordinates(shape))[,"Y"], weight = 1,
                      radius = ~size,
                      color = "black",opacity = 1,
-                     fillColor = pal(as.vector(shape[[a2[i]]])),fillOpacity = 1,
+                     fillColor = pal(as.vector(shape[[py]])),fillOpacity = 1,
                      highlight = highlightOptions(weight = 1,
                                                   color = "black",
                                                   fillOpacity = 0.5,
@@ -2370,8 +2443,8 @@ server = function(input, output, session) {
                      label = lapply(labs, htmltools::HTML),
                      #group =  sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(paste0(DatosVar$Shape_Visualizacion)))) %>%
                      group =  Nshape , options = pathOptions(pane = "principalpuntos")) %>% 
-          addLegend(pal = pal, values = as.vector(shape[["Value"]]), 
-                    title = paste0(py," ",DatosVar$Nombre," ",DatosVar$Unidad), group = Nshape, opacity = 1 )
+          addLegend(pal = pal, values = as.vector(shape[[py]]), 
+                    title =Textlegend, group = Nshape, opacity = 1 )
         #labFormat = labelFormat(prefix = "$"),
         
         #map1
@@ -2379,26 +2452,28 @@ server = function(input, output, session) {
         #else if ((class(shape)[1]=="SpatialLinesDataFrame") ){
         
         #size=round(as.data.frame(Tshape[1]+(Tshape[2]-Tshape[1])/(length(unique(shape@data$Value))-1)*(0:(length(unique(shape@data$Value))-1))),1)
-        size=round(as.data.frame(Tshape[1]+(Tshape[2]-Tshape[1])/(length(unique(shape[["Value"]]))-1)*(0:(length(unique(shape[["Value"]]))-1))),1)
+        size=round(as.data.frame(Tshape[1]+(Tshape[2]-Tshape[1])/(length(unique(shape[[py]]))-1)*(0:(length(unique(shape[[py]]))-1))),1)
         colnames(size)="size"
         if (DatosVar$Critico =="MAX"){
           #size$Value=sort(unique(shape@data$Value))
-          size$Value=sort(unique(shape[["Value"]]))
+          size$Value=sort(unique(shape[[py]]))
         } 
         
         if (DatosVar$Critico =="MIN"){
           #size$Value=sort(unique(shape@data$Value), decreasing = TRUE)
-          size$Value=sort(unique(shape[["Value"]]), decreasing = TRUE)
+          size$Value=sort(unique(shape[[py]]), decreasing = TRUE)
         } 
         
-        shape = merge(shape, size, by="Value",all.x=FALSE)
+        colnames(size)[2]=py
+        
+        shape = merge(shape, size, by=py,all.x=FALSE)
         shape=st_zm(shape, drop = T, what = "ZM")
         #tabla=as.data.frame(shape)
         #sort(tabla$size)
         map = map %>% 
           addPolylines(data=shape, stroke = TRUE, smoothFactor = 1, fillOpacity = 1,
                        opacity = 1, weight = shape[["size"]],dashArray = "1",
-                       color = pal(as.vector(shape[[a2[i]]])),
+                       color = pal(as.vector(shape[[py]])),
                        highlight = highlightOptions(weight = 3,
                                                     color = "black",
                                                     fillOpacity = 1,
@@ -2407,8 +2482,8 @@ server = function(input, output, session) {
                        #label=~paste("Unidad Hidrografica : ", Name,"\n","Area km2 : ", Area_KM2,"\n","Indicador : ", Indicador,"\n","Valor : ", Valor ,"\n","Categoria : ", Categoria),
                        #group =  sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(paste0(DatosVar$Shape_Visualizacion)))) %>% 
                        group =  Nshape , options = pathOptions(pane = "principallineas") )%>% 
-          addLegend(pal = pal, values = as.vector(shape[["Value"]]), 
-                    title = paste0(py," ",DatosVar$Nombre," ",DatosVar$Unidad), group = Nshape, opacity = 1 )
+          addLegend(pal = pal, values = as.vector(shape[[py]]), 
+                    title = Textlegend, group = Nshape, opacity = 1 )
         #labFormat = labelFormat(prefix = "$"),
         
         
